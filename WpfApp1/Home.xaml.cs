@@ -24,5 +24,50 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void Banking_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void GovDoc_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void ResourceGroups_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Health_Resources_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Events_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Attractions_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Accommodations_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Transit_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Map_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
