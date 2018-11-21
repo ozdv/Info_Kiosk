@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\obj\Debug\
+\\samba.cs.ucalgary.ca\sarah.hatchersmallma\Documents\HCI\Info_Kiosk-master\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\App.xaml
-62088712353
-
-15565108452
+\\samba.cs.ucalgary.ca\sarah.hatchersmallma\Documents\HCI\Info_Kiosk-master\WpfApp1\App.xaml
+6-2071111034
+1-12745879
+15-389350591
 131569487696
-Home.xaml;MainWindow.xaml;Languages.xaml;UserControl2.xaml;WelcomePage.xaml;GovDoc.xaml;
+Home.xaml;MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;
 
-False
+True
 

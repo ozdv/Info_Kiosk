@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-\\samba.cs.ucalgary.ca\sarah.hatchersmallma\Documents\HCI\Info_Kiosk-master\WpfApp1\obj\Debug\
+\\samba.cs.ucalgary.ca\sarah.hatchersmallma\Documents\HCI\Info_Kiosk-master\WpfApp1\obj\Release\
 WpfApp1
 none
 false
-DEBUG;TRACE
+TRACE
 \\samba.cs.ucalgary.ca\sarah.hatchersmallma\Documents\HCI\Info_Kiosk-master\WpfApp1\App.xaml
 6-2071111034
 1-12745879
