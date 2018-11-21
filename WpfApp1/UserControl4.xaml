@@ -12,7 +12,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StatusBar HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
-        <Label Content="Government Documents" Foreground="white" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" Height="50" Width="566" FontSize="36" Background="#00000000" Grid.Column="1"/>
+        <Label Content="Government Documents" Foreground="white" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" Height="50" Width="566" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>
         <TextBlock Margin="50,100,708,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" FontSize="20" Grid.Column="1"><Run Text="Driver's License"/><LineBreak/><Run/></TextBlock>
         <TextBlock Margin="350,100,410,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Alberta Health Care" FontSize="20"/>
         <TextBlock Margin="650,100,47,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Harry Hays Building" FontSize="20"/>
@@ -25,7 +25,7 @@
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="50,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="Apply to drive in Calgary"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://Alberta.ca/drivers-license"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="350,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="All your health coverage resources"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://health.alberta.ca/"/></TextBlock>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="650,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="All Government documents "/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://canada.ca/en/something"/></TextBlock>
-        <Button x:Name="back_button" RenderTransformOrigin="0.50,0.50" Margin="0,0,910,490" Click="Back_Click" Grid.ColumnSpan="2">
+        <Button x:Name="back_button" RenderTransformOrigin="0.50,0.50" Margin="2,0,908,490" Click="Back_Click" Grid.ColumnSpan="2">
             <Button.Template>
                 <ControlTemplate>
                     <Border HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" >
@@ -37,7 +37,7 @@
                                 <TranslateTransform X="0" Y="0"/>
                             </TransformGroup>
                         </Border.RenderTransform>
-                        <Image Source="Assets/icon-back.png" 
+                        <Image Source="Assets/back_icon.png" 
                                Width="50" 
                                Height="50"/>
                     </Border>

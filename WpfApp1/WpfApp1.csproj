@@ -126,9 +126,6 @@
     <Resource Include="accessibility.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon1.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +133,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\cowboyHat.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\back_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
