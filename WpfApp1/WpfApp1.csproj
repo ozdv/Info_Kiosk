@@ -57,17 +57,17 @@
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="Languages.xaml.cs">
+      <DependentUpon>Languages.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControl2.xaml.cs">
       <DependentUpon>UserControl2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl3.xaml.cs">
-      <DependentUpon>UserControl3.xaml</DependentUpon>
+    <Compile Include="WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl4.xaml.cs">
-      <DependentUpon>UserControl4.xaml</DependentUpon>
+    <Compile Include="GovDoc.xaml.cs">
+      <DependentUpon>GovDoc.xaml</DependentUpon>
     </Compile>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
@@ -85,7 +85,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControl1.xaml">
+    <Page Include="Languages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -93,11 +93,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl3.xaml">
+    <Page Include="WelcomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl4.xaml">
+    <Page Include="GovDoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,9 +130,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="accessibility.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -158,6 +155,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\govdoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\help.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
