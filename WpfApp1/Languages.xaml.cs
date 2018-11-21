@@ -32,5 +32,9 @@ namespace WpfApp1
         {
 
         }
+        private void English_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Navigate.Move(new Home());
+        }
     }
 }

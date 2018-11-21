@@ -7,39 +7,33 @@
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
     <Grid  Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <StatusBar HorizontalAlignment="Left" Height="50" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
         <Label Content="Government Documents" Foreground="white" HorizontalAlignment="Left" Margin="50,0,0,0" VerticalAlignment="Top" Height="50" Width="566" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>
-        <TextBlock Margin="50,100,708,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" FontSize="20" Grid.Column="1"><Run Text="Driver's License"/><LineBreak/><Run/></TextBlock>
-        <TextBlock Margin="350,100,410,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Alberta Health Care" FontSize="20"/>
-        <TextBlock Margin="650,100,47,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Harry Hays Building" FontSize="20"/>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="50,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="Apply to drive in Calgary"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://Alberta.ca/drivers-license"/></TextBlock>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="350,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="All your health coverage resources"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://health.alberta.ca/"/></TextBlock>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="650,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="263"><Run Text="All Government documents "/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://canada.ca/en/something"/></TextBlock>
-        <TextBlock Margin="50,269,708,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" FontSize="20" Grid.Column="1"><Run Text="Driver's License"/><LineBreak/><Run/></TextBlock>
-        <TextBlock Margin="350,269,410,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Alberta Health Care" FontSize="20"/>
-        <TextBlock Margin="650,269,110,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Harry Hays Building" FontSize="20"/>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="50,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="Apply to drive in Calgary"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://Alberta.ca/drivers-license"/></TextBlock>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="350,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="All your health coverage resources"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://health.alberta.ca/"/></TextBlock>
-        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="650,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200"><Run Text="All Government documents "/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://canada.ca/en/something"/></TextBlock>
-        <Button x:Name="back_button" RenderTransformOrigin="0.50,0.50" Margin="2,0,908,490" Click="Back_Click" Grid.ColumnSpan="2">
+        <TextBlock Margin="50,2.18,708,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" FontSize="20" Grid.Column="1" Grid.Row="1"><Run Text="Driver's License"/><LineBreak/><Run/></TextBlock>
+        <TextBlock Margin="350,2.18,410,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Alberta Health Care" FontSize="20" Grid.Row="1"/>
+        <TextBlock Margin="650,2.18,47,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Harry Hays Building" FontSize="20" Grid.Row="1"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="50,37.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200" Grid.Row="1"><Run Text="Apply to drive in Calgary"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://Alberta.ca/drivers-license"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="350,37.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200" Grid.Row="1"><Run Text="All your health coverage resources"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://health.alberta.ca/"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="650,37.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="263" Grid.Row="1"><Run Text="All Government documents "/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://canada.ca/en/something"/></TextBlock>
+        <TextBlock Margin="50,171.18,708,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" FontSize="20" Grid.Column="1" Grid.Row="1"><Run Text="Driver's License"/><LineBreak/><Run/></TextBlock>
+        <TextBlock Margin="350,171.18,410,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Alberta Health Care" FontSize="20" Grid.Row="1"/>
+        <TextBlock Margin="650,171.18,110,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Grid.Column="1" Text="Harry Hays Building" FontSize="20" Grid.Row="1"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="50,206.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200" Grid.Row="1"><Run Text="Apply to drive in Calgary"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://Alberta.ca/drivers-license"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="350,206.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200" Grid.Row="1"><Run Text="All your health coverage resources"/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://health.alberta.ca/"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="650,206.18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="200" Grid.Row="1"><Run Text="All Government documents "/><LineBreak/><Run Text="403-123-4567"/><LineBreak/><Run Text="http://canada.ca/en/something"/></TextBlock>
+        <Button x:Name="back_button"  Margin="16,4,894,44" Click="Back_Click" Grid.ColumnSpan="2">
             <Button.Template>
                 <ControlTemplate>
-                    <Border HorizontalAlignment="Center" VerticalAlignment="Center" RenderTransformOrigin="0.5,0.5" >
-                        <Border.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform/>
-                                <SkewTransform/>
-                                <RotateTransform/>
-                                <TranslateTransform X="0" Y="0"/>
-                            </TransformGroup>
-                        </Border.RenderTransform>
-                        <Image Source="Assets/back_icon.png" 
-                               Width="50" 
-                               Height="50"/>
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Height="45" Margin="0,0,7,5" Width="43" >
+                        <Image Source="Assets/back_icon.png" Width="50" Height="50"/>
                     </Border>
                 </ControlTemplate>
             </Button.Template>

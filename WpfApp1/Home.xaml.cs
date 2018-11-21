@@ -32,7 +32,7 @@ namespace WpfApp1
 
         private void GovDoc_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Navigate.Move(new UserControl4());
         }
 
         private void ResourceGroups_MouseDown(object sender, MouseButtonEventArgs e)
@@ -73,6 +73,11 @@ namespace WpfApp1
         private void TextBox_TextChanged_1(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Back_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Navigate.Move(new UserControl1());
         }
     }
 }
