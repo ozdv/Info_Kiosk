@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\App.xaml
-6-2071111034
+62088712353
 
-15622416189
+15565108452
 131569487696
-Home.xaml;MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;
+Home.xaml;MainWindow.xaml;Languages.xaml;UserControl2.xaml;WelcomePage.xaml;GovDoc.xaml;
 
-False
+True
 
