@@ -54,6 +54,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl1.xaml.cs">
       <DependentUpon>UserControl1.xaml</DependentUpon>
     </Compile>
@@ -66,6 +69,10 @@
     <Compile Include="UserControl4.xaml.cs">
       <DependentUpon>UserControl4.xaml</DependentUpon>
     </Compile>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -136,6 +143,21 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\accessibility.png" />
+    <Resource Include="Assets\attractions.png" />
+    <Resource Include="Assets\banking.png" />
+    <Resource Include="Assets\calendar.png" />
+    <Resource Include="Assets\clipboard.png" />
+    <Resource Include="Assets\health.png" />
+    <Resource Include="Assets\housing.png" />
+    <Resource Include="Assets\maps.png" />
+    <Resource Include="Assets\resourceGroup.png" />
+    <Resource Include="Assets\train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\govdoc.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
