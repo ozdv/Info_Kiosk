@@ -37,7 +37,7 @@ namespace WpfApp1
 
         private void ResourceGroups_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Navigate.Move(new UserControl2());
         }
 
         private void Health_Resources_MouseDown(object sender, MouseButtonEventArgs e)

@@ -32,7 +32,10 @@ namespace WpfApp1
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
-
+            Button backbuton = (Button)sender;
+            backbuton.Visibility = Visibility.Collapsed;
+            Home mynewPage = new Home(); //newPage is the name of the newPage.xaml file
+            this.Content = mynewPage;
         }
     }
 }
