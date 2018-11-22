@@ -6,15 +6,11 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Background="#f6f6f6" Width="960" Height="540">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="413*"/>
-            <ColumnDefinition Width="548*"/>
-        </Grid.ColumnDefinitions>
+    <Grid Background="#f6f6f6">
         <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="2">
             <Label Content="Select Language" Height="45" Width="220" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" VerticalAlignment="Center" HorizontalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" Margin="373,0,0,0"/>
         </StatusBar>
-        <Grid HorizontalAlignment="Left" Height="482" Margin="7,58,0,0" VerticalAlignment="Top" Width="950" Grid.ColumnSpan="2">
+        <Grid HorizontalAlignment="Left" Margin="7,58,0,0" VerticalAlignment="Top" Height="448" Width="912" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
@@ -27,17 +23,18 @@
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,10,0,0" Content="Fārsī" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Label Height="100" Margin="30,10,35,0"  Content="Español" VerticalAlignment="Top" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Label Height="100" Margin="30,10,10,0"  Content="Español" VerticalAlignment="Top" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,10,0,0" Content="Français" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,12,0,0" Content="普通話" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,12,0,0" Content="tiếng việt " VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1"/>
-            <Label HorizontalAlignment="Left" Height="100" Margin="30,10,0,0" Content="廣東話" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="100" Margin="30,10,0,0" Content="Deutsche" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,9,0,0" Content="اللغة العربية" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="3"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,11,0,0" Content="English" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="2" MouseDown="English_MouseDown"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,9,0,0" Content="日本語" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,9,0,0" Content="한국말" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,13,0,0" Content="ภาษาไทย" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="3"/>
             <Label HorizontalAlignment="Left" Height="100" Margin="30,11,0,0" Content="Tagalog" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="3"/>
+            <Label HorizontalAlignment="Left" Height="100" Margin="30,13,0,0" Content="ภาษาไทย" VerticalAlignment="Top" Width="254" Background="White" FontFamily="Microsoft Sans Serif" FontSize="32" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="3"/>
         </Grid>
     </Grid>
 </UserControl>

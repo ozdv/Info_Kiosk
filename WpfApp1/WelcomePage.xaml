@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
     
-    <Grid Width="960" Height="540" Background ="#f6f6f6" Margin="0,1,0,-1">
+    <Grid Height ="540" Width="960" Background ="#f6f6f6" Margin="0,1,0,-1">
         <Image x:Name="SavedImage" Source="Assets/citylogo.png" Margin="16,12,743,430" HorizontalAlignment="Center" VerticalAlignment="Center" >
             <Image.Resources>
                 <Style TargetType="Image">

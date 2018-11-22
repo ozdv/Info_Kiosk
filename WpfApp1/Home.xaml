@@ -6,15 +6,20 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Background="#f6f6f6" Width="960" Height="540">
-        <StatusBar HorizontalAlignment="Center" Height="65" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="2">
+    <Grid Background="#f6f6f6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="662*"/>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="223*"/>
+        </Grid.ColumnDefinitions>
+        <StatusBar HorizontalAlignment="Center" Height="65" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="50" Width="50" OpacityMask="White" Margin="0,0,0,0" MouseDown="Back_MouseDown"/>
             <Image Source ="Assets/accessibility.png" Height="50" Width="50" OpacityMask="White" Margin="0,0,0,0"/>
             <Image Source ="Assets/help.png" Height="50" Width="50" Margin="0,0,0,0" OpacityMask="White"/>
             <Label Content="City of Calgary Resources" Height="55" Width="490" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="36" HorizontalAlignment="Center" Margin="50,0,0,0"/>
             <Label Content="15℃ 4:26pm" Height="55" Width="230" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="32" HorizontalAlignment="Center" Margin="20,0,0,0"/>
         </StatusBar>
-        <Grid HorizontalAlignment="Left" Height="482" Margin="7,58,0,0" VerticalAlignment="Top" Width="950" Grid.ColumnSpan="2">
+        <Grid HorizontalAlignment="Left" Height="482" Margin="7,58,0,0" VerticalAlignment="Top" Width="950" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="316*"/>
                 <ColumnDefinition Width="291*"/>
@@ -25,17 +30,17 @@
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <TextBox HorizontalAlignment="Left" Height="49" Margin="104,102,0,0" TextWrapping="Wrap" Text="Map" VerticalAlignment="Top" Width="98" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <TextBox HorizontalAlignment="Left" Height="43" Margin="81,112,0,0" TextWrapping="Wrap" Text="Transit" VerticalAlignment="Top" Width="129" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="44" Margin="52,110,0,0" TextWrapping="Wrap" Text="Accommodations" VerticalAlignment="Top" Width="254" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"/>
-            <TextBox HorizontalAlignment="Left" Height="45" Margin="4,101,0,0" TextWrapping="Wrap" Text="Upcoming Events" VerticalAlignment="Top" Width="286" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="42" Margin="34,102,0,0" TextWrapping="Wrap" Text="Health Resources" VerticalAlignment="Top" Width="287" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="42" Margin="30,96,0,0" TextWrapping="Wrap" Text="Attractions" VerticalAlignment="Top" Width="254" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
-            <TextBox HorizontalAlignment="Left" Height="54" Margin="0,101,0,0" TextWrapping="Wrap" Text="Government Documents" VerticalAlignment="Top" Width="340" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
-            <TextBox HorizontalAlignment="Left" Height="54" Margin="3,101,0,0" TextWrapping="Wrap" Text="Banking Information" VerticalAlignment="Top" Width="283" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="1"/>
-            <TextBox HorizontalAlignment="Left" Height="49" Margin="8,107,0,0" TextWrapping="Wrap" Text="Resource Groups" VerticalAlignment="Top" Width="285" TextChanged="TextBox_TextChanged_1" Background="White" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2"/>
+            <Label HorizontalAlignment="Left" Height="49" Margin="104,102,0,0" Content="Map" VerticalAlignment="Top" Width="98" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label HorizontalAlignment="Left" Height="43" Margin="81,112,0,0" Content="Transit" VerticalAlignment="Top" Width="129" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Label HorizontalAlignment="Left" Height="44" Margin="52,110,0,0" Content="Accommodations" VerticalAlignment="Top" Width="254" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2"/>
+            <Label HorizontalAlignment="Left" Height="45" Margin="4,101,0,0" Content="Upcoming Events" VerticalAlignment="Top" Width="286" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="34,102,0,0" Content="Health Resources" VerticalAlignment="Top" Width="287" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="30,96,0,0" Content="Attractions" VerticalAlignment="Top" Width="254" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="54" Margin="0,101,0,0" Content="Government Documents" VerticalAlignment="Top" Width="340" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
+            <Label HorizontalAlignment="Left" Height="54" Margin="3,101,0,0" Content="Banking Information" VerticalAlignment="Top" Width="283" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+            <Label HorizontalAlignment="Left" Height="49" Margin="8,107,0,0" Content="Resource Groups" VerticalAlignment="Top" Width="285" FontFamily="Microsoft Sans Serif" FontSize="30" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2"/>
         </Grid>
-        <Image x:Name="Map" Source="Assets/maps.png" Margin="0,76,764,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Map_MouseDown"  >
+        <Image x:Name="Map" Source="Assets/maps.png" Margin="0,76,465.986,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Map_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -46,7 +51,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Transit" Source="Assets/train.png" Margin="0,76,450,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Transit_MouseDown" Grid.ColumnSpan="2"  >
+        <Image x:Name="Transit" Source="Assets/train.png" Margin="0,76,151.986,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Transit_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -57,7 +62,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Accommodations" Source="Assets/housing.png" Margin="0,76,120,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Accommodations_MouseDown" Grid.Column="1"  >
+        <Image x:Name="Accommodations" Source="Assets/housing.png" Margin="0,76,120,378" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Accommodations_MouseDown" Grid.ColumnSpan="2" Grid.Column="1"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -68,7 +73,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Attractions" Source="Assets/attractions.png" Margin="0,226,764,221" HorizontalAlignment="Right" VerticalAlignment="Center" Height="93" Width="108" MouseDown="Attractions_MouseDown"  >
+        <Image x:Name="Attractions" Source="Assets/attractions.png" Margin="0,226,465.986,221" HorizontalAlignment="Right" VerticalAlignment="Center" Height="93" Width="108" MouseDown="Attractions_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -79,7 +84,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Events" Source="Assets/calendar.png" Margin="0,226,450,228" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Events_MouseDown" Grid.ColumnSpan="2"  >
+        <Image x:Name="Events" Source="Assets/calendar.png" Margin="0,226,151.986,228" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Events_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -90,7 +95,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Health_Resources" Source="Assets/health.png" Margin="0,216,126,238" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Health_Resources_MouseDown" Grid.Column="1"  >
+        <Image x:Name="Health_Resources" Source="Assets/health.png" Margin="0,216,126,238" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Health_Resources_MouseDown" Grid.ColumnSpan="2" Grid.Column="1"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -101,7 +106,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="ResourceGroups" Source="Assets/resourceGroup.png" Margin="0,380,764,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="ResourceGroups_MouseDown"  >
+        <Image x:Name="ResourceGroups" Source="Assets/resourceGroup.png" Margin="0,380,465.986,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="ResourceGroups_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -112,7 +117,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="GovDoc" Source="Assets/govdoc.png" Margin="0,380,120,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="GovDoc_MouseDown" Grid.Column="1">
+        <Image x:Name="GovDoc" Source="Assets/govdoc.png" Margin="0,380,120,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="GovDoc_MouseDown" Grid.ColumnSpan="2" Grid.Column="1">
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -123,7 +128,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Banking" Source="Assets/banking.png" Margin="0,380,452,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Banking_MouseDown" Grid.ColumnSpan="2"  >
+        <Image x:Name="Banking" Source="Assets/banking.png" Margin="0,380,153.986,74" HorizontalAlignment="Right" VerticalAlignment="Center" Height="86" Width="110" MouseDown="Banking_MouseDown"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>

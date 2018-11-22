@@ -62,8 +62,8 @@
     <Compile Include="Languages.xaml.cs">
       <DependentUpon>Languages.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl2.xaml.cs">
-      <DependentUpon>UserControl2.xaml</DependentUpon>
+    <Compile Include="ResourceGroup.xaml.cs">
+      <DependentUpon>ResourceGroup.xaml</DependentUpon>
     </Compile>
     <Compile Include="WelcomePage.xaml.cs">
       <DependentUpon>WelcomePage.xaml</DependentUpon>
@@ -91,7 +91,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl2.xaml">
+    <Page Include="ResourceGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
