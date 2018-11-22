@@ -9,8 +9,8 @@
     <Grid Background="#f6f6f6">
         <StatusBar HorizontalAlignment="Center" Height="65" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="50" Width="50" OpacityMask="White" Margin="0,0,0,0" MouseDown="Back_MouseDown"/>
-            <Image Source ="Assets/accessibility.png" Height="50" Width="50" OpacityMask="White" Margin="0,0,0,0"/>
-            <Image Source ="Assets/help.png" Height="50" Width="50" Margin="0,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/accessibilitySign.png" Height="50" Width="50" OpacityMask="White" Margin="0,0,0,0"/>
+            <Image Source ="Assets/helpSign.png" Height="50" Width="50" Margin="0,0,0,0" OpacityMask="White"/>
             <Label Content="City of Calgary Resources" Height="55" Width="490" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="36" HorizontalAlignment="Center" Margin="50,0,0,0"/>
             <Label Content="15℃ 4:26pm" Height="55" Width="230" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="32" HorizontalAlignment="Center" Margin="20,0,0,0"/>
         </StatusBar>

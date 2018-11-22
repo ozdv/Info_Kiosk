@@ -11,7 +11,7 @@
             <MediaElement Name="redangVideo" Source="redang.wmv" LoadedBehavior="Manual" Grid.Row="0" RenderTransformOrigin="0.501,0.7" Margin="0,330,646,10"/>
             <TextBox HorizontalAlignment="Left" Height="42" Margin="-16,141,0,0" TextWrapping="Wrap" Text="         https://www.calgaryjca.com/           " VerticalAlignment="Top" Width="330" FontFamily="Microsoft Sans Serif" FontSize="14
                      " Background="{x:Null}" BorderBrush="#FFF6F6F6" FontWeight="Bold" TextChanged="TextBox_TextChanged"/>
-            <Image x:Name="SavedImage" Source="Assets/Jap1.PNG" Margin="10,55,730,418" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="220" >
+            <Image x:Name="SavedImage" Source="Assets/Jap1.PNG" Margin="10,60,730,323" HorizontalAlignment="Center" VerticalAlignment="Center" Height="67" Width="220" >
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>
@@ -44,7 +44,7 @@
                 </Button>
                 <Label Content="Resource Groups" Foreground="white" HorizontalAlignment="Left" VerticalAlignment="Top" Height="50" Width="552" FontSize="40" Background="#00000000" FontFamily="Microsoft Sans Serif"/>
             </StatusBar>
-            <Image x:Name="SavedImage_Copy" Source="Assets/Nikkei.PNG" Margin="248,70,499,420" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="213" >
+            <Image x:Name="SavedImage_Copy" Source="Assets/Nikkei.PNG" Margin="248,71,499,329" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="213" >
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>
@@ -55,7 +55,7 @@
                     </Style>
                 </Image.Resources>
             </Image>
-            <Image x:Name="SavedImage_Copy1" Source="Assets/New.PNG" Margin="466,70,281,420" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="213" >
+            <Image x:Name="SavedImage_Copy1" Source="Assets/New.PNG" Margin="466,73,281,327" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="213" >
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>
@@ -66,7 +66,7 @@
                     </Style>
                 </Image.Resources>
             </Image>
-            <Image x:Name="SavedImage_Copy2" Source="Assets/Jap.PNG" Margin="679,55,6,414" HorizontalAlignment="Center" VerticalAlignment="Center" Height="71" Width="275" >
+            <Image x:Name="SavedImage_Copy2" Source="Assets/Jap.PNG" Margin="679,66,6,313" HorizontalAlignment="Center" VerticalAlignment="Center" Height="71" Width="275" >
                 <Image.Resources>
                     <Style TargetType="{x:Type Image}">
                         <Style.Triggers>

@@ -8,6 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("helpsign.jpeg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("accessbilitysign.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("helpsign.png")]
 
 

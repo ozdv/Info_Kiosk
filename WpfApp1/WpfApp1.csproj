@@ -164,5 +164,9 @@
   <ItemGroup>
     <Resource Include="Assets\camera.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\accessibilitySign.png" />
+    <Resource Include="Assets\helpSign.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
