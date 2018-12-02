@@ -24,7 +24,7 @@ namespace WpfApp1
         {
             InitializeComponent();
             Navigate.pageSwitchWindow = this;
-            Navigate.Move(new UserControl3());
+            Navigate.Move(new Welcome());
 
         }
 

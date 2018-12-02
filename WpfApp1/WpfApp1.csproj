@@ -36,6 +36,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -54,18 +56,68 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserControl1.xaml.cs">
-      <DependentUpon>UserControl1.xaml</DependentUpon>
+    <Compile Include="AHS.xaml.cs">
+      <DependentUpon>AHS.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl2.xaml.cs">
-      <DependentUpon>UserControl2.xaml</DependentUpon>
+    <Compile Include="Clipboard.xaml.cs">
+      <DependentUpon>Clipboard.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl3.xaml.cs">
-      <DependentUpon>UserControl3.xaml</DependentUpon>
+    <Compile Include="Email.xaml.cs">
+      <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl4.xaml.cs">
-      <DependentUpon>UserControl4.xaml</DependentUpon>
+    <Compile Include="harryHaysBuilding.xaml.cs">
+      <DependentUpon>harryHaysBuilding.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ISS.xaml.cs">
+      <DependentUpon>ISS.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Languages.xaml.cs">
+      <DependentUpon>Languages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Map.xaml.cs" />
+    <Compile Include="Print.xaml.cs">
+      <DependentUpon>Print.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResourceGroup.xaml.cs">
+      <DependentUpon>ResourceGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Transit.xaml.cs" />
+    <Compile Include="Trash.xaml.cs">
+      <DependentUpon>Trash.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GovDoc.xaml.cs">
+      <DependentUpon>GovDoc.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AHS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Clipboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Email.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="harryHaysBuilding.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ISS.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,19 +130,35 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserControl1.xaml">
+    <Page Include="Languages.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl2.xaml">
+    <Page Include="Map.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Print.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl3.xaml">
+    <Page Include="ResourceGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl4.xaml">
+    <Page Include="Transit.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Trash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WelcomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GovDoc.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,12 +191,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="accessibility.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Icon1.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Assets\citylogo.png" />
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +198,57 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Assets\cowboyHat.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\back_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\accessibility.png" />
+    <Resource Include="Assets\attractions.png" />
+    <Resource Include="Assets\banking.png" />
+    <Resource Include="Assets\calendar.png" />
+    <Resource Include="Assets\clipboard.png" />
+    <Resource Include="Assets\health.png" />
+    <Resource Include="Assets\housing.png" />
+    <Resource Include="Assets\maps.png" />
+    <Resource Include="Assets\resourceGroup.png" />
+    <Resource Include="Assets\train.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\govdoc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\accessibilitySign.png" />
+    <Resource Include="Assets\helpSign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\clipboard2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\email.png" />
+    <Resource Include="Assets\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\44121647_1955266541206212_9049286300699459584_n.jpg" />
+    <Resource Include="Assets\AHS LOGO.png" />
+    <Resource Include="Assets\bldg_4802.jpg" />
+    <Resource Include="Assets\c-train-calgary-feb2016-map.jpg" />
+    <Resource Include="Assets\Canada-Flag-Transparent.png" />
+    <Resource Include="Assets\Government-of-Alberta.png" />
+    <Resource Include="Assets\Jap.PNG" />
+    <Resource Include="Assets\Jap1.PNG" />
+    <Resource Include="Assets\kisspng-computer-icons-accessibility-symbol-disabled-5b0bf135965da3.3088643715275093016159.jpg" />
+    <Resource Include="Assets\map1.png" />
+    <Resource Include="Assets\University-Of-Calgary-Logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

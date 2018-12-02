@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\obj\Debug\
+U:\Desktop\Info_Kiosk\Info_Kiosk\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\App.xaml
-5-298463987
+U:\Desktop\Info_Kiosk\Info_Kiosk\WpfApp1\App.xaml
+151728775880
 
-141682074760
-131569487696
-MainWindow.xaml;UserControl1.xaml;UserControl2.xaml;UserControl3.xaml;UserControl4.xaml;
+241978189594
+151984215308
+AHS.xaml;Clipboard.xaml;Email.xaml;harryHaysBuilding.xaml;Home.xaml;ISS.xaml;MainWindow.xaml;Languages.xaml;Map.xaml;Print.xaml;ResourceGroup.xaml;Transit.xaml;Trash.xaml;WelcomePage.xaml;GovDoc.xaml;
 
-False
+True
 
