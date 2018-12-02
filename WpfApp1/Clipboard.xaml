@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="WpfApp1.Clipboard"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid Background="#f6f6f6">
+        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+            <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="185,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Clipboard" Height="43" Width="141" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Label Content="15℃ 4:27pm" Height="43" Width="170" Margin="165,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/clipboard2.png" Height="34" Width="36" OpacityMask="White" Margin="10,0,0,0"/>
+        </StatusBar>
+        <Grid HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Width="788" Height="285">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="226*"/>
+                <ColumnDefinition Width="697*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="158*"/>
+                <RowDefinition Height="158*"/>
+                <RowDefinition Height="158*"/>
+            </Grid.RowDefinitions>
+            <CheckBox HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" Height="36" Grid.Row="0" RenderTransformOrigin="1.69,1.575"/>
+            <CheckBox HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" Height="36" Grid.Row="1" RenderTransformOrigin="1.69,1.575"/>
+            <CheckBox HorizontalAlignment="Left" Margin="20,54,0,0" VerticalAlignment="Top" Height="36" Grid.Row="2" RenderTransformOrigin="1.69,1.575"/>
+            <Label Content="Select All" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="50,45,0,0"  Grid.Row="0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="150" FontWeight="Bold"/>
+            <Label Content="Saved info 1" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="50,45,0,0"  Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="150"/>
+            <Label Content="Saved info 2" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="50,45,0,0"  Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="150"/>
+            <Label Content="Short Description 1" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="50,45,0,0"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="32" Width="238"/>
+            <Label Content="Short Description 2" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="50,45,0,0"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="40" Width="238"/>
+            <Image Source ="Assets/trash.png" Height="30" Width="30" Margin="421,45,144,20" Grid.Row="1" Grid.Column="1" MouseDown="Trash_MouseDown" RenderTransformOrigin="5.633,0.467"/>
+            <Image Source ="Assets/trash.png" Height="30" Width="30" Margin="421,45,144,20" Grid.Row="2" Grid.Column="1" RenderTransformOrigin="1.733,0.533"/>
+        </Grid>
+        <Label Content="Saved to My Clipboard" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="352,58,349,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="47" Width="259" FontWeight="Bold"/>
+        <Image x:Name="Email" Source="Assets/email.png" Margin="821,223,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929"  >
+            <Image.Resources>
+                <Style TargetType="Image">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                            <Setter  Property="Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Resources>
+        </Image>
+        <Image x:Name="Print" Source="Assets/print.png" Margin="821,303,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Print_MouseDown" RenderTransformOrigin="0.738,-3.286"  >
+            <Image.Resources>
+                <Style TargetType="Image">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                            <Setter  Property="Visibility" Value="Visible"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Image.Resources>
+        </Image>
+        <TextBlock HorizontalAlignment="Left" Margin="879,303,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Margin="879,223,0,0" TextWrapping="Wrap" Text="Email Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="68" RenderTransformOrigin="0.588,0.742"/>
+    </Grid>
+</UserControl>
+
