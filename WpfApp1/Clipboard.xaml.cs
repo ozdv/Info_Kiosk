@@ -36,12 +36,11 @@ namespace WpfApp1
             string email = userEmail.Text;
             if (email.Contains("@"))
             {
-                MessageBoxResult result = MessageBox.Show(messageBoxText: "Sending email! Have a good day :)");
+                MessageBoxResult result = MessageBox.Show("Email is sent! Have a good day! :)");
             } else
             {
                 MessageBoxResult result = MessageBox.Show("Please enter a proper email in the form name@mail.com");
             }    
-
         }
 
         private void Print_MouseDown(object sender, MouseButtonEventArgs e)

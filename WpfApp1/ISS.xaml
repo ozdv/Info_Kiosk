@@ -17,11 +17,12 @@
         </Grid.ColumnDefinitions>
         <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
-            <!--<Image Source ="Assets/accessibilitySign.png" Height="55" Width="46" OpacityMask="White" Margin="0,0,0,0"/>-->
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
-            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="45,0,0,0" MouseDown="Back_MouseDown"/>
-            <Label Content="International Student Service" Height="43" Width="410" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Label Content="15℃ 4:26pm" Height="43" Width="170" Margin="39,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Label Content="4:26pm" Height="43" Width="110" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="International Students Services" Height="43" Width="440" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="10,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
         <!--<StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
@@ -69,22 +70,8 @@
                 <ImageBrush/>
             </Label.BorderBrush>
         </Label>
-        <TextBox IsReadOnly="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="338" Margin="37,70,0,0" Grid.Row="1" TextWrapping="Wrap" Text="The University of Calgary's International Student Services offers support and customized advising for all international students trying to adjust to studying at the University of Calgary and to life in Canada.&#xD;&#xA;&#xD;&#xA;They offer support such as: setting up a Canadian Bank account, visas, study permits, work permits and important information that can help make the decision to study at the University of Calgary.&#xD;&#xA;&#xD;&#xA;On their website they have many advisors to contact from that also that their own emails so you can contact them directly if you have any questions. " VerticalAlignment="Top" Width="411" FontSize="14">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
-        <TextBox IsReadOnly="True" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="233" Margin="507,175,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Address: At the University of Calgary MacEwan Student Centre MSC Room 275&#xA;&#xA;Hours: Monday - Friday, 9:00AM - 12:00 PM,  1:00PM - 4:00 PM&#xA;&#xA;Website: https://www.ucalgary.ca/iss/&#xA;&#xA;Email: international.advice@ucalgary.ca" VerticalAlignment="Top" Width="426" FontWeight="Bold" FontSize="16">
-            <TextBox.BorderBrush>
-                <ImageBrush/>
-            </TextBox.BorderBrush>
-            <TextBox.Background>
-                <ImageBrush/>
-            </TextBox.Background>
-        </TextBox>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="338" Margin="37,70,0,0" Grid.Row="1" TextWrapping="Wrap" Text="The University of Calgary's International Student Services offers support and customized advising for all international students trying to adjust to studying at the University of Calgary and to life in Canada.&#xD;&#xA;&#xD;&#xA;They offer support such as: setting up a Canadian Bank account, visas, study permits, work permits and important information that can help make the decision to study at the University of Calgary.&#xD;&#xA;&#xD;&#xA;On their website they have many advisors to contact from that also that their own emails so you can contact them directly if you have any questions. " VerticalAlignment="Top" Width="411" FontSize="14"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="233" Margin="507,175,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Address: University of Calgary MacEwan Student Centre &#x09;Room 275&#xA;&#xA;Hours:   Monday - Friday, 9:00AM - 12:00 PM,  &#x09;1:00PM - 4:00 PM&#xA;&#xA;Website: https://www.ucalgary.ca/iss/&#xA;&#xA;Email: international.advice@ucalgary.ca" VerticalAlignment="Top" Width="426" FontWeight="Bold" FontSize="16"/>
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="85" Margin="79,237,0,0" Grid.Row="1" VerticalAlignment="Top" Width="203" Source="Assets/uni.png"/>
         <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="101,327,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
     </Grid>

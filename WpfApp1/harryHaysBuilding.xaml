@@ -17,11 +17,12 @@
         </Grid.ColumnDefinitions>
         <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
-            <!--<Image Source ="Assets/accessibilitySign.png" Height="55" Width="46" OpacityMask="White" Margin="0,0,0,0"/>-->
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
-            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="145,0,0,0" MouseDown="Back_MouseDown"/>
-            <Label Content="Harry Hays Building" Height="43" Width="310" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Label Content="15℃ 4:26pm" Height="43" Width="170" Margin="39,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Harry Hays Building" Height="43" Width="350" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="40,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
         <!--<StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
@@ -73,7 +74,7 @@
         </TextBox>
         <Label Grid.ColumnSpan="2" Content="Harry Hays Building" HorizontalAlignment="Left" Margin="46,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="246" FontSize="24" FontWeight="Bold" />
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="226" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/bldg_4802.jpg" Grid.Row="1"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address: suite 150, 220 4th Avenue SE, Calgary&#xA;&#xA;Phone: 1-800 - O - Canada (1-800-622-6232) for all Locations&#xA;&#xA;Hours: Monday to Friday: 7:30 AM - 4:30PM" VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16">
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address: suite 150, 220 4th Avenue SE, Calgary&#xA;&#xA;Phone: 1-800 - O - Canada (1-800-622-6232)&#x09; for all Locations&#xA;&#xA;Hours: Monday to Friday: 7:30 AM - 4:30PM" VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16">
             <TextBox.BorderBrush>
                 <ImageBrush/>
             </TextBox.BorderBrush>

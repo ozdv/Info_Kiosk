@@ -248,5 +248,11 @@
     <Resource Include="Assets\map1.png" />
     <Resource Include="Assets\University-Of-Calgary-Logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\sun.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

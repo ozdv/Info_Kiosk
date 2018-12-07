@@ -7,13 +7,23 @@
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
     <Grid Background="#f6f6f6">
-        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+        <!--<StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="185,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Clipboard" Height="43" Width="141" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
             <Label Content="15℃ 4:27pm" Height="43" Width="170" Margin="165,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard2.png" Height="34" Width="36" OpacityMask="White" Margin="10,0,0,0"/>
+        </StatusBar>-->
+        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+            <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
+            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="70,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Clipboard" Height="43" Width="150" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="170,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/clipboard2.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" />
         </StatusBar>
         <Grid HorizontalAlignment="Left" Margin="0,110,0,0" VerticalAlignment="Top" Width="788" Height="285">
             <Grid.ColumnDefinitions>
@@ -36,7 +46,7 @@
             <Image Source ="Assets/trash.png" Height="30" Width="30" Margin="421,45,144,20" Grid.Row="1" Grid.Column="1" MouseDown="Trash_MouseDown" RenderTransformOrigin="5.633,0.467"/>
             <Image Source ="Assets/trash.png" Height="30" Width="30" Margin="421,45,144,20" Grid.Row="2" Grid.Column="1" RenderTransformOrigin="1.733,0.533"/>
         </Grid>
-        <Label Content="Saved to My Clipboard" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="352,58,349,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="47" Width="259" FontWeight="Bold"/>
+        <Label Content="Saved to My Clipboard" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="368,85,333,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="47" Width="259" FontWeight="Bold"/>
         <Image x:Name="Email" Source="Assets/email.png" Margin="808,223,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929"  >
             <Image.Resources>
                 <Style TargetType="Image">
