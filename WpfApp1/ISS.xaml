@@ -25,45 +25,6 @@
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-        <!--<StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
-        <Label Content="International Student Services" Foreground="white" HorizontalAlignment="Left" Margin="227,10,0,0" VerticalAlignment="Top" Height="63" Width="594" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>-->
-        <!--<button x:name="back_button"  margin="5,10,905,38" click="back_click" grid.columnspan="2">
-            <button.template>
-                <controltemplate>
-                    <border horizontalalignment="left" verticalalignment="center" height="45" margin="0,0,7,5" width="43" >
-                        <image source="assets/back_icon.png" width="50" height="50"/>
-                    </border>
-                </controltemplate>
-            </button.template>
-        </button>-->
-        <!--<Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Width="59" Height="63">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="64" Source="Assets/helpSign.png" OpacityMask="#FFFBF4F4" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.27"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-        </Button>-->
-        <!--<Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="64" Height="63">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-            <Image Height="53" Width="54" Source="Assets/accessibilitySign.png"/>
-        </Button>-->
-        <!--<label content="15℃ 4:26pm" height="55" width="230" fontfamily="ms reference sans serif" foreground="#f6f6f6" verticalalignment="center" automationproperties.isrowheader="true" fontsize="32" horizontalalignment="center" margin="720,5,10,38" grid.columnspan="2"/>-->
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="304" Margin="476,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="457" Source="Assets/University-Of-Calgary-Logo.png"/>
         <Label Grid.ColumnSpan="2" Content="University of Calgary, International Student Services" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="411" FontSize="16" FontWeight="Bold">
             <Label.BorderBrush>
