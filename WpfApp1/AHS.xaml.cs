@@ -45,7 +45,16 @@ namespace WpfApp1
 
         private void AddToClipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new GovDoc());
+            MessageBoxResult result = MessageBox.Show("Adding Alberta Health Services to clipboard", "Info Kiosk", MessageBoxButton.OKCancel);
+            switch (result)
+            {
+                case MessageBoxResult.OK:
+                    MessageBox.Show("Added to clipboard!", "Info Kiosk");
+                    Navigate.Move(new GovDoc());
+                    break;
+                case MessageBoxResult.Cancel:
+                    break;
+            }
         }
     }
 }
