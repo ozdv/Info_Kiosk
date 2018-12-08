@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="WpfApp1.UserControlM1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid  Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
+        <Label Content="Centre for Newcomers" Foreground="white" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Height="63" Width="594" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="back_button"  Margin="5,10,905,38" Click="Back_Click" Grid.ColumnSpan="2">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Height="45" Margin="0,0,7,5" Width="43" >
+                        <Image Source="Assets/back_icon.png" Width="50" Height="50"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Width="59" Height="63">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="64" Source="Assets/helpSign.png" OpacityMask="#FFFBF4F4" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.27"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="64" Height="63">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Height="53" Width="54" Source="Assets/accessibilitySign.png"/>
+        </Button>
+        <Label Content="15℃ 4:26pm" Height="55" Width="230" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="32" HorizontalAlignment="Center" Margin="657,5,73,38" Grid.ColumnSpan="2"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="423" Margin="28,9,0,0" Grid.Row="1" TextWrapping="Wrap" Text="The Centre for Newcomers is a key not-for-profit resource centre for Calgary's immigrants and refugees of all nationalities to receive settlement and integration services and information.&#xD;&#xA; &#xD;&#xA;English Language Program - Improve your ability to speak, understand, read and write in English. &#xD;&#xA;&#xD;&#xA;Settlement Services - Keep yourself informed and connected as you settle and become independent. &#xD;&#xA;&#xD;&#xA;Career Development and Job Search - Learn about resume, interview, cover letter, networking, job search strategies as you look for work and plan your career in Canada.  Our Job Search Centre provides clients with free computer use, fax and resume printing.&#xD;&#xA;&#xD;&#xA;Volunteer Development - Volunteer to gain Canadian work experience, build your network and give back to the community.&#xD;&#xA;&#xD;&#xA;All our Programs and Services are COST-FREE for eligible applicants." VerticalAlignment="Top" Width="528" FontSize="14" IsReadOnly="True">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="226" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/centNew.jpg" Grid.Row="1"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address:  1010, 999 - 36th St. N.E.&#xD;&#xA;&#xD;&#xA;Phone: 403.569.3325&#xD;&#xA;&#xD;&#xA;Hours: Monday to Friday 8:30 am - 4:30 pm
+  Closed on Statutory holidays and long weekends.&#xD;&#xA;&#xD;&#xA;Website: http://centrefornewcomers.ca/ " VerticalAlignment="Top" Width="325" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="14">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="-14,63,0,0" TextWrapping="Wrap" Text="        Centre for Newcomers          " VerticalAlignment="Top" Width="330" FontFamily="Microsoft Sans Serif" FontSize="20" Background="{x:Null}" BorderBrush="#FFF6F6F6" TextChanged="TextBox_TextChanged" FontWeight="Bold" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>

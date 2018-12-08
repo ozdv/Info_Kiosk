@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="WpfApp1.UserControlM1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid  Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>
+        <Label Content="CIES" Foreground="white" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Height="63" Width="594" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>
+        <Button x:Name="back_button"  Margin="5,10,905,38" Click="Back_Click" Grid.ColumnSpan="2">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Height="45" Margin="0,0,7,5" Width="43" >
+                        <Image Source="Assets/back_icon.png" Width="50" Height="50"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Width="59" Height="63">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="64" Source="Assets/helpSign.png" OpacityMask="#FFFBF4F4" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.27"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="64" Height="63">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Height="53" Width="54" Source="Assets/accessibilitySign.png"/>
+        </Button>
+        <Label Content="15℃ 4:26pm" Height="55" Width="230" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="32" HorizontalAlignment="Center" Margin="664,0,66,43" Grid.ColumnSpan="2"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="423" Margin="28,9,0,0" Grid.Row="1" TextWrapping="Wrap" Text="We are a non-profit registered charity, devoted to assisting newcomers and low-income Calgarians settle successfully in Canada. &#xD;&#xA;&#xD;&#xA;Settlement Assistance&#xD;&#xA;Our settlement programs are designed to help newcomers and new Canadians find where to go, what to do, and who to speak with. Each program focuses on important integration activities such as financial literacy, employee rights, and counselling. &#xA; &#xA;English Language &#xD;&#xA;Whether you are looking to learn English in-class or at home, we can help provide you with a variety of options to improve your listening, speaking, reading, and writing. a variety of class times and language-specific courses to help newcomers, permanent residents, refugees, and Canadian citizens.&#xD;&#xA;&#xD;&#xA;Employment Training  &#xD;&#xA;Our employment-related programs are built to help clients develop the fundamental skills needed to navigate the Canadian job market and keep up in an ever-changing economy. Get the essential computer skills needed for a variety of tasks, or focus on charting a new career path by enhancing your talents or building your own business.&#xD;&#xA;&#xD;&#xA;Duration varies • Price varies" VerticalAlignment="Top" Width="528" FontSize="14" IsReadOnly="True" TextChanged="TextBox_TextChanged_1">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="246" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/calgImEd.jpg" Grid.Row="1"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address 1: Forest Lawn 1723 - 4- Street S.E.&#xD;&#xA;Address 2 (Whitehorn): 3820 - 32 Street N.E. &#xD;&#xA;Address 3 (Westwinds): 32 Westwinds Crescent N.E. &#xD;&#xA;&#xD;&#xA;Phone: 403.569.3325&#xD;&#xA;&#xD;&#xA;Hours: Monday to Friday 8:30 am - 4:30 pm
+  Closed on Statutory holidays and long weekends.&#xD;&#xA;&#xD;&#xA;Website: http://centrefornewcomers.ca/ " VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="14">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="-14,73,0,0" TextWrapping="Wrap" Text="        Calgary Immigrant Educational Society         " VerticalAlignment="Top" Width="458" FontFamily="Microsoft Sans Serif" FontSize="20" Background="{x:Null}" BorderBrush="#FFF6F6F6" TextChanged="TextBox_TextChanged" FontWeight="Bold" Grid.ColumnSpan="2"/>
+    </Grid>
+</UserControl>
