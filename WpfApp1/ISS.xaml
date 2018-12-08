@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Height ="540" Width="960" Background ="White" Margin="0,1,0,-1">
+    <Grid   Background="White"  >
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"/>
             <RowDefinition Height="221*"/>
@@ -25,7 +25,7 @@
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="304" Margin="476,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="457" Source="Assets/University-Of-Calgary-Logo.png"/>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="266" Margin="476,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="427" Source="Assets/University-Of-Calgary-Logo.png"/>
         <Label Grid.ColumnSpan="2" Content="University of Calgary, International Student Services" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="411" FontSize="16" FontWeight="Bold">
             <Label.BorderBrush>
                 <ImageBrush/>
@@ -33,7 +33,6 @@
         </Label>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="338" Margin="37,70,0,0" Grid.Row="1" TextWrapping="Wrap" Text="The University of Calgary's International Student Services offers support and customized advising for all international students trying to adjust to studying at the University of Calgary and to life in Canada.&#xD;&#xA;&#xD;&#xA;They offer support such as: setting up a Canadian Bank account, visas, study permits, work permits and important information that can help make the decision to study at the University of Calgary.&#xD;&#xA;&#xD;&#xA;On their website they have many advisors to contact from that also that their own emails so you can contact them directly if you have any questions. " VerticalAlignment="Top" Width="411" FontSize="14"/>
         <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="233" Margin="507,175,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Address: University of Calgary MacEwan Student Centre &#x09;Room 275&#xA;&#xA;Hours:   Monday - Friday, 9:00AM - 12:00 PM,  &#x09;1:00PM - 4:00 PM&#xA;&#xA;Website: https://www.ucalgary.ca/iss/&#xA;&#xA;Email: international.advice@ucalgary.ca" VerticalAlignment="Top" Width="426" FontWeight="Bold" FontSize="16"/>
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="85" Margin="79,237,0,0" Grid.Row="1" VerticalAlignment="Top" Width="203" Source="Assets/uni.png"/>
         <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="101,327,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
     </Grid>
 </UserControl>

@@ -66,6 +66,15 @@
       <DependentUpon>Email.xaml</DependentUpon>
     </Compile>
     <Compile Include="GovDoc.xaml.cs" />
+    <Compile Include="CalgBridge.xaml.cs">
+      <DependentUpon>CalgBridge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImgServ.xaml.cs">
+      <DependentUpon>ImgServ.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="New_Cent.xaml.cs">
+      <DependentUpon>New_Cent.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HarryHaysBuilding.xaml.cs">
       <DependentUpon>HarryHaysBuilding.xaml</DependentUpon>
     </Compile>
@@ -104,7 +113,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ResGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="GovDoc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CalgBridge.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ImgServ.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="New_Cent.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -249,10 +274,22 @@
     <Resource Include="Assets\University-Of-Calgary-Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon1.ico" />
+    <Resource Include="Assets\sun.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Assets\sun.png" />
+    <Resource Include="Assets\centNew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\calgImEd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\CBFY.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\ImgServ.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\CalgBrid.JPG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

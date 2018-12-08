@@ -16,16 +16,14 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for ISS.xaml
+    /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class ISS : UserControl
+    public partial class UserControlM1 : UserControl
     {
-        public ISS()
+        public UserControlM1()
         {
             InitializeComponent();
         }
-
-
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             Button backbuton = (Button)sender;
@@ -33,6 +31,10 @@ namespace WpfApp1
             Navigate.Move(new GovDoc());
         }
 
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
 
         private void Clipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {

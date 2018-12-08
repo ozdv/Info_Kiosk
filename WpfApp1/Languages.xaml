@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Height ="540" Width="960" Background ="#f6f6f6" Margin="0,1,0,-1">
+    <Grid Background="#f6f6f6">
         <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="2">
             <Label Content="Select Language" Height="45" Width="220" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" VerticalAlignment="Center" HorizontalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" Margin="363,0,0,0"/>
         </StatusBar>

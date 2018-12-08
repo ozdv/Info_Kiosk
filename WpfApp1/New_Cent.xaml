@@ -1,0 +1,66 @@
+﻿<UserControl x:Class="WpfApp1.UserControlM1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid  Background="White" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+            <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
+            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Centre for Newcomers" Height="43" Width="350" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="40,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+        </StatusBar>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="343" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="English Language Program - Improve your ability to speak, understand, read and write in English. The Centre offers English classes for adults. To take part in ESL (English as a second language) classes, you must first visit the Immigrant Language and Vocational Assessment Referral Centre - ILVARC  at (403) 262-2656 and set up a time to meet with a specialist who will refer you to the right class.
+
+
+                 
+                                
+                 &#xA;&#xA;Settlement Services - Keep yourself informed and connected as you settle and become independent. Make your first years in Canada a positive experience. 
+ 
+
+                 
+                 
+                 
+                 
+                &#xA;&#xA;Career Development and Job Search - Learn about resume, interview, cover letter, networking, job search strategies as you look for work and plan your career in Canada.  Our Job Search Centre provides clients with free computer use, fax and resume printing.
+
+
+                 
+                 
+                 
+                 " VerticalAlignment="Top" Width="461" FontSize="14" IsReadOnly="True">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Grid.ColumnSpan="2" Content="Centre for Newcomers" HorizontalAlignment="Left" Margin="46,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="321" FontSize="24" FontWeight="Bold" />
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="226" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/CentNew.jpg" Grid.Row="1"/>
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address: 1010, 999 -36th St. N.E.&#xA;&#xA;Phone: (403) 569-3325 &#xA;&#xA;Hours: Monday to Friday: 8:30 AM - 4:30PM" VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16">
+            <TextBox.BorderBrush>
+                <ImageBrush/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <ImageBrush/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="116,344,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
+    </Grid>
+</UserControl>

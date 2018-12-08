@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Height ="540" Width="960" Background ="#f6f6f6" Margin="0,1,0,-1">
+    <Grid  Background="#f6f6f6" Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="481*"/>
             <ColumnDefinition Width="479*"/>
@@ -17,7 +17,7 @@
             <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="55,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Transit" Height="43" Width="160" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source="Assets/sun.png" Height="38" Width="38" Margin="170,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="170,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="36" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
