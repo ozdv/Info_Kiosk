@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfApp1.GovDoc"
+﻿<UserControl x:Class="WpfApp1.ResGroup"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -26,7 +26,7 @@
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,3,0,0" VerticalAlignment="Top" Width="200" Height="136" Click="Button_Click_2" Grid.Row="1">
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,3,0,0" VerticalAlignment="Top" Width="200" Height="136" Grid.Row="1">
             <Button.Foreground>
                 <ImageBrush/>
             </Button.Foreground>

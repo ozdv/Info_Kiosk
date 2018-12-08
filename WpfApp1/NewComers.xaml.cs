@@ -18,9 +18,9 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class UserControlM1 : UserControl
+    public partial class Newcomers : UserControl
     {
-        public UserControlM1()
+        public Newcomers()
         {
             InitializeComponent();
         }

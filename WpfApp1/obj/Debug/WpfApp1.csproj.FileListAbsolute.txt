@@ -226,3 +226,9 @@ C:\Users\Kim\Desktop\App\Info_Kiosk\WpfApp1\obj\Debug\Trash.baml
 \\cs-fs01.cs.ucalgary.ca\Profiles\ug\cameron.davies\Desktop\infokiosk\WpfApp1\obj\Debug\WpfApp1.csproj.CoreCompileInputs.cache
 \\cs-fs01.cs.ucalgary.ca\Profiles\ug\cameron.davies\Desktop\infokiosk\WpfApp1\obj\Debug\WpfApp1.exe
 \\cs-fs01.cs.ucalgary.ca\Profiles\ug\cameron.davies\Desktop\infokiosk\WpfApp1\obj\Debug\WpfApp1.pdb
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResGroup.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\CalgBridge.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\New_Cent.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImmigrantEdc.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\NewComers.g.cs

@@ -72,6 +72,12 @@
     <Compile Include="ImgServ.xaml.cs">
       <DependentUpon>ImgServ.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImmigrantEdc.xaml.cs">
+      <DependentUpon>ImmigrantEdc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="NewComers.xaml.cs">
+      <DependentUpon>NewComers.xaml</DependentUpon>
+    </Compile>
     <Compile Include="New_Cent.xaml.cs">
       <DependentUpon>New_Cent.xaml</DependentUpon>
     </Compile>
@@ -91,9 +97,7 @@
     <Compile Include="Print.xaml.cs">
       <DependentUpon>Print.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ResourceGroup.xaml.cs">
-      <DependentUpon>ResourceGroup.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="ResGroup.cs" />
     <Compile Include="Transit.xaml.cs" />
     <Compile Include="Trash.xaml.cs">
       <DependentUpon>Trash.xaml</DependentUpon>
@@ -112,6 +116,14 @@
     <Page Include="Email.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImmigrantEdc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="NewComers.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ResGroup.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -166,10 +178,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Print.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ResourceGroup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

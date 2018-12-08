@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-\\cs-fs01.cs.ucalgary.ca\Profiles\ug\cameron.davies\Desktop\infokiosk\WpfApp1\obj\Debug\
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-\\cs-fs01.cs.ucalgary.ca\Profiles\ug\cameron.davies\Desktop\infokiosk\WpfApp1\App.xaml
-15-1251456088
+U:\Desktop\Info_Kiosk\WpfApp1\App.xaml
+20-1545445494
 
-24-1451478316
+29811845189
 151984215308
-AHS.xaml;Clipboard.xaml;Email.xaml;GovDoc.xaml;HarryHaysBuilding.xaml;Home.xaml;ISS.xaml;MainWindow.xaml;Languages.xaml;Map.xaml;Print.xaml;ResourceGroup.xaml;Transit.xaml;Trash.xaml;WelcomePage.xaml;
+AHS.xaml;Clipboard.xaml;Email.xaml;ImmigrantEdc.xaml;NewComers.xaml;ResGroup.xaml;GovDoc.xaml;CalgBridge.xaml;ImgServ.xaml;New_Cent.xaml;HarryHaysBuilding.xaml;Home.xaml;ISS.xaml;MainWindow.xaml;Languages.xaml;Map.xaml;Print.xaml;Transit.xaml;Trash.xaml;WelcomePage.xaml;
 
-True
+False
 

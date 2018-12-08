@@ -18,9 +18,9 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class UserControlM1 : UserControl
+    public partial class ImmigrantEdc : UserControl
     {
-        public UserControlM1()
+        public ImmigrantEdc()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace WpfApp1
         {
             Button backbuton = (Button)sender;
             backbuton.Visibility = Visibility.Collapsed;
-            Navigate.Move(new UserControl4());
+            Navigate.Move(new ResGroup());
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

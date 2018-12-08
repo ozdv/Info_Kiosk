@@ -16,24 +16,30 @@ using System.Windows.Shapes;
 namespace WpfApp1
 {
     /// <summary>
-    /// Interaction logic for Page1.xaml
+    /// Interaction logic for Transit.xaml
     /// </summary>
-    public partial class HarryHays : UserControl
+    public partial class ResGroup : UserControl
     {
-        public HarryHays()
+        public ResGroup()
         {
             InitializeComponent();
         }
-        private void Back_Click(object sender, RoutedEventArgs e)
+        private void Back_MouseDown(object sender, RoutedEventArgs e)
         {
-            Button backbuton = (Button)sender;
-            backbuton.Visibility = Visibility.Collapsed;
-            Navigate.Move(new GovDoc());
+            Home mynewPage = new Home(); //newPage is the name of the newPage.xaml file
+            this.Content = mynewPage;
         }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void Image_MouseDown1(object sender, RoutedEventArgs e)
         {
-
+            Navigate.Move(new CalBridge());
+        }
+        private void Image_MouseDown2(object sender, RoutedEventArgs e)
+        {
+            Navigate.Move(new ImgServ());
+        }
+        private void Image_MouseDown(object sender, RoutedEventArgs e)
+        {
+            Navigate.Move(new Newcomers());
         }
 
         private void Clipboard_MouseDown(object sender, MouseButtonEventArgs e)
@@ -44,12 +50,7 @@ namespace WpfApp1
 
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new GovDoc());
-        }
-
-        private void AddToClipboard_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Navigate.Move(new GovDoc());
+            Navigate.Move(new Home());
         }
     }
 }
