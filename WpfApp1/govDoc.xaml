@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:WpfApp1"
              mc:Ignorable="d" 
              d:DesignHeight="540" d:DesignWidth="960">
-    <Grid Height ="540" Width="960" Background ="#f6f6f6" Margin="0,1,0,-1">
+    <Grid Height ="540" Width="960" Background ="white" Margin="0,1,0,-1">
         <Grid.RowDefinitions>
             <RowDefinition Height="49*"/>
             <RowDefinition Height="221*"/>
@@ -25,43 +25,6 @@
             <Label Content="15℃ 4:26pm" Height="43" Width="170" Margin="9,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-        <!--<Label Content="Government Documents" Foreground="white" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Height="63" Width="594" FontSize="36" Background="#00000000" Grid.Column="1" FontFamily="Microsoft Sans Serif"/>-->
-        <!--<Button x:Name="back_button"  Margin="5,10,905,38" Click="Back_Click" Grid.ColumnSpan="2">
-            <Button.Template>
-                <ControlTemplate>
-                    <Border HorizontalAlignment="Left" VerticalAlignment="Center" Height="45" Margin="0,0,7,5" Width="43" >
-                        <Image Source="Assets/back_icon.png" Width="50" Height="50"/>
-                    </Border>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>-->
-        <!--<Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="129,0,0,0" VerticalAlignment="Top" Width="59" Height="63">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-            <Image HorizontalAlignment="Left" Height="60" VerticalAlignment="Top" Width="64" Source="Assets/helpSign.png" OpacityMask="#FFFBF4F4" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="-0.27"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
-        </Button>-->
-        <!--<Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,0,0,0" VerticalAlignment="Top" Width="64" Height="63">
-            <Button.BorderBrush>
-                <ImageBrush/>
-            </Button.BorderBrush>
-            <Button.Background>
-                <ImageBrush/>
-            </Button.Background>
-            <Image Height="53" Width="54" Source="Assets/accessibilitySign.png"/>
-        </Button>-->
         <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,3,0,0" VerticalAlignment="Top" Width="200" Height="136" Click="Button_Click_2" Grid.Row="1">
             <Button.Foreground>
                 <ImageBrush/>
