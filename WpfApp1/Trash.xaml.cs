@@ -36,7 +36,14 @@ namespace WpfApp1
             string email = userEmail.Text;
             if (email.Contains("@"))
             {
-                MessageBoxResult result = MessageBox.Show("Email is sent! Have a good day! :)");
+                if (MessageBox.Show("Email this collection to " + email + " ?", "Email", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                {
+                    //do no stuff
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show("An email has been sent to you. Have a good day! :)");
+                }
             }
             else
             {
@@ -46,12 +53,34 @@ namespace WpfApp1
 
         private void Print_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show("Printing now! Have a good day! :)");
+            if (MessageBox.Show("Do you wish to print this collection?", "Print", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                //do no stuff
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Printing now. Have a good day! :)");
+            }
         }
-
         private void Trash_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Navigate.Move(new Trash());
+        }
+
+        private void enterEmail(object sender, MouseEventArgs e)
+        {
+            if (userEmail.Text.Trim() != "" || userEmail.Text != null)
+
+            {
+
+                userEmail.Text = "";
+
+            }
+        }
+
+        private void restorePrompt(object sender, MouseEventArgs e)
+        {
+            userEmail.Text = "Enter your email here";
         }
     }
 }

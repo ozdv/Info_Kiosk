@@ -84,5 +84,11 @@ namespace WpfApp1
         {
             Navigate.Move(new Clipboard());
         }
+
+        private void BlankClipboard_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Navigate.Move(new BlankClipboard());
+
+        }
     }
 }

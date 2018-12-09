@@ -49,7 +49,7 @@ namespace WpfApp1
 
         private void AddToClipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new ResGroup());
+            MessageBoxResult result = MessageBox.Show("Added to your Clipboard!");
         }
     }
 }

@@ -43,7 +43,7 @@
             <Image Source ="Assets/trash.png" Margin="418,16,-28,26" Grid.Row="2" Grid.Column="1" MouseDown="Trash_MouseDown" RenderTransformOrigin="1.733,0.533"/>
             <Image Source ="Assets/trash.png" Margin="435,17,-12,24" Grid.Row="3" Grid.Column="1" MouseDown="Trash_MouseDown" RenderTransformOrigin="1.733,0.533"/>
         </Grid>
-        <Label Content="Saved to My Clipboard" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="10,92,689,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="261" FontWeight="Bold"/>
+        <Label Content=" Saved to My Clipboard" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="37,92,653,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="270"/>
         <Image x:Name="Email" Source="Assets/email.png" Margin="808,271,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929"  >
             <Image.Resources>
                 <Style TargetType="Image">
@@ -68,7 +68,7 @@
         </Image>
         <TextBlock HorizontalAlignment="Left" Margin="865,352,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75"/>
         <TextBlock HorizontalAlignment="Left" Margin="865,271,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="63" RenderTransformOrigin="0.588,0.742"/>
-        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="808,219,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132"/>
+        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="808,219,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt"/>
     </Grid>
 </UserControl>
 

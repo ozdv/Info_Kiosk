@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,9 +19,9 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for Clipboard.xaml
     /// </summary>
-    public partial class Clipboard : UserControl
+    public partial class BlankClipboard : UserControl
     {
-        public Clipboard()
+        public BlankClipboard()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace WpfApp1
             string email = userEmail.Text;
             if (email.Contains("@"))
             {
-                if (MessageBox.Show("Email this collection to "+email+" ?", "Email", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+                if (MessageBox.Show("Email this collection to " + email + " ?", "Email", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
                 {
                     //do no stuff
                 }
@@ -44,10 +44,11 @@ namespace WpfApp1
                 {
                     MessageBoxResult result = MessageBox.Show("An email has been sent to you. Have a good day! :)");
                 }
-            } else
+            }
+            else
             {
                 MessageBoxResult result = MessageBox.Show("Please enter a proper email in the form name@mail.com");
-            }    
+            }
         }
 
         private void Print_MouseDown(object sender, MouseButtonEventArgs e)

@@ -49,7 +49,14 @@ namespace WpfApp1
 
         private void AddToClipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new GovDoc());
+            if (MessageBox.Show("Adding this information to your clipboard?", "Question", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                //do no stuff
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("Added to your Clipboard!");
+            }
         }
     }
 }

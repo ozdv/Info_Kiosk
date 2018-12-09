@@ -234,3 +234,5 @@ U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResGroup.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\CalgBridge.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\New_Cent.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\BlankClipboard.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\BlankClipboard.baml

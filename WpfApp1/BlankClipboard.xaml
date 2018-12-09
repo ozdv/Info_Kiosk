@@ -1,4 +1,4 @@
-﻿<UserControl x:Class="WpfApp1.Trash"
+﻿<UserControl x:Class="WpfApp1.BlankClipboard"
             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -19,8 +19,8 @@
         </StatusBar>
         <Grid HorizontalAlignment="Left" Margin="0,136,0,0" VerticalAlignment="Top" Width="788" Height="276">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="299*"/>
-                <ColumnDefinition Width="489*"/>
+                <ColumnDefinition Width="325*"/>
+                <ColumnDefinition Width="69*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="158*"/>
@@ -29,18 +29,11 @@
                 <RowDefinition Height="158*"/>
             </Grid.RowDefinitions>
             <CheckBox HorizontalAlignment="Left" Margin="20,34,0,0" VerticalAlignment="Top" Height="36" Grid.Row="0" RenderTransformOrigin="1.69,1.575" Width="16" Grid.RowSpan="2"/>
-            <CheckBox HorizontalAlignment="Left" Margin="20,25,0,0" VerticalAlignment="Top" Height="36" Grid.Row="1" RenderTransformOrigin="1.69,1.575" Width="16"/>
-            <CheckBox HorizontalAlignment="Left" Margin="20,26,0,0" VerticalAlignment="Top" Height="36" Grid.Row="2" RenderTransformOrigin="1.69,1.575" Width="16"/>
-            <Label Content="Select All" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="20" Margin="41,26,0,0"  Grid.Row="0" RenderTransformOrigin="-14.399,-6.05" Width="150" FontWeight="Bold"/>
-            <Label Content="Harry Hays Building" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="18" Margin="41,16,0,0"  Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="217"/>
-            <Label Content="International Students Services" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="18" Margin="41,16,0,0"  Grid.Row="2" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="259" Grid.ColumnSpan="2"/>
-            <Label Content="Citizenship and Immigration, CRA, Service Canada " HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="18" Margin="10,16,0,0"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="30" Width="420"/>
-            <Label Content="Centre for international students at UCalgary" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="18" Margin="10,16,0,0"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="40" Width="420"/>
-            <Image Source ="Assets/trash.png" Margin="418,16,-28,25" Grid.Row="1" Grid.Column="1" MouseDown="Trash_MouseDown" RenderTransformOrigin="5.633,0.467"/>
-            <Image Source ="Assets/trash.png" Margin="418,16,-28,26" Grid.Row="2" Grid.Column="1" RenderTransformOrigin="1.733,0.533"/>
+            <Label Content="Select All" Foreground ="Gray" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="20" Margin="41,26,0,0"  Grid.Row="0" RenderTransformOrigin="-14.399,-6.05" Width="150"/>
+            <Label Content="Your saved information will appear here" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="41,16,0,0"  Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="599" FontStyle="Italic"/>
         </Grid>
-        <Label Content=" Saved to My Clipboard" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="46,92,653,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="261"/>
-        <Image x:Name="Email" Source="Assets/email.png" Margin="808,271,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929"  >
+        <Label Content=" Saved to My Clipboard" Foreground ="Gray" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="40,97,650,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="270"/>
+        <Image x:Name="Email" Source="Assets/email.png" Margin="808,271,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929" Opacity="0.5"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -51,7 +44,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Print" Source="Assets/print.png" Margin="808,352,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Print_MouseDown" RenderTransformOrigin="0.738,-3.286"  >
+        <Image x:Name="Print" Source="Assets/print.png" Margin="808,352,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Print_MouseDown" RenderTransformOrigin="0.738,-3.286" Opacity="0.5"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -62,8 +55,8 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <TextBlock HorizontalAlignment="Left" Margin="865,352,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75"/>
-        <TextBlock HorizontalAlignment="Left" Margin="865,271,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="63" RenderTransformOrigin="0.588,0.742"/>
-        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="808,219,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt"/>
+        <TextBlock HorizontalAlignment="Left" Margin="865,352,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="865,271,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="63" RenderTransformOrigin="0.588,0.742" Opacity="0.5"/>
+        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="808,219,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt" Foreground="#FF817B7B"/>
     </Grid>
 </UserControl>

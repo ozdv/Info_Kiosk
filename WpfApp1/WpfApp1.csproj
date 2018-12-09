@@ -59,6 +59,9 @@
     <Compile Include="AHS.xaml.cs">
       <DependentUpon>AHS.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BlankClipboard.xaml.cs">
+      <DependentUpon>BlankClipboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Clipboard.xaml.cs">
       <DependentUpon>Clipboard.xaml</DependentUpon>
     </Compile>
@@ -105,6 +108,10 @@
     <Page Include="AHS.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="BlankClipboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Clipboard.xaml">
       <SubType>Designer</SubType>

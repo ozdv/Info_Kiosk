@@ -13,9 +13,10 @@
             <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="55,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Resources" Height="43" Width="160" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="170,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="80,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
-            <Image Source ="Assets/clipboard.png" Height="36" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Image Source ="Assets/clipboard.png" Height="36" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="BlankClipboard_MouseDown"/>
+            <Label Content="Clipboard" Height="43" Width="117" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" MouseDown="BlankClipboard_MouseDown" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="20" HorizontalAlignment="Center"/>
         </StatusBar>
         <Grid HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Width="950" Height="449">
             <Grid.ColumnDefinitions>
