@@ -29,11 +29,11 @@ namespace WpfApp1
             Home mynewPage = new Home(); //newPage is the name of the newPage.xaml file
             this.Content = mynewPage;
         }
-        private void Image_MouseDown1(object sender, RoutedEventArgs e)
+        private void Image_MouseDown_1(object sender, RoutedEventArgs e)
         {
             Navigate.Move(new CalBridge());
         }
-        private void Image_MouseDown2(object sender, RoutedEventArgs e)
+        private void Image_MouseDown_2(object sender, RoutedEventArgs e)
         {
             Navigate.Move(new ImgServ());
         }
@@ -46,7 +46,6 @@ namespace WpfApp1
         {
             Navigate.Move(new Clipboard());
         }
-
 
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
         {

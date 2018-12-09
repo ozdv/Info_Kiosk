@@ -28,7 +28,7 @@ namespace WpfApp1
         {
             Button backbuton = (Button)sender;
             backbuton.Visibility = Visibility.Collapsed;
-            Navigate.Move(new UserControl4());
+            Navigate.Move(new ResGroup());
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)

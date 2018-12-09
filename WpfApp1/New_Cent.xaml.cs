@@ -44,12 +44,12 @@ namespace WpfApp1
 
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new GovDoc());
+            Navigate.Move(new ResGroup());
         }
 
         private void AddToClipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new GovDoc());
+            Navigate.Move(new ResGroup());
         }
     }
 }

@@ -299,5 +299,17 @@
   <ItemGroup>
     <Resource Include="Assets\CalgBrid.JPG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\44121647_1955266541206212_9049286300699459584_n.jpg" />
+    <Resource Include="Assets\CalgLib.jpg" />
+    <Resource Include="Assets\CenNew.jpg" />
+    <Resource Include="Assets\Direct.jpg" />
+    <Resource Include="Assets\dsfasdf.png" />
+    <Resource Include="Assets\ImgEduc.jpg" />
+    <Resource Include="Assets\map.png" />
+    <Resource Include="Assets\New.PNG" />
+    <Resource Include="Assets\Nikkei.PNG" />
+    <Resource Include="Assets\review.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

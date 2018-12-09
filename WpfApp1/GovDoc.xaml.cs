@@ -72,7 +72,7 @@ namespace WpfApp1
 
         private void Image_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new UserControlM1());
+            Navigate.Move(new HarryHays());
         }
 
         private void TextBox_TextChanged_3(object sender, TextChangedEventArgs e)

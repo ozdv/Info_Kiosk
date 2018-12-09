@@ -86,7 +86,6 @@ U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WpfApp1.csprojResolveAssemblyReference.c
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\Home.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\MainWindow.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\Languages.g.cs
-U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResourceGroup.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WelcomePage.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\App.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
@@ -94,7 +93,6 @@ U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\Home.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\MainWindow.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\Languages.baml
-U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResourceGroup.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WelcomePage.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\GovDoc.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\WpfApp1.g.resources
@@ -232,3 +230,9 @@ U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\New_Cent.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImmigrantEdc.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\NewComers.g.cs
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImmigrantEdc.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\NewComers.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResGroup.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\CalgBridge.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.baml
+U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\New_Cent.baml

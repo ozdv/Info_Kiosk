@@ -8,6 +8,15 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/sun.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/44121647_1955266541206212_9049286300699459584_n.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/calglib.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/cennew.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/direct.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/dsfasdf.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/imgeduc.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/map.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/new.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/nikkei.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("assets/review.png")]
 
 
