@@ -39,7 +39,7 @@ namespace WpfApp1
         }
         private void Image_MouseDown(object sender, RoutedEventArgs e)
         {
-            Navigate.Move(new Newcomers());
+            Navigate.Move(new NewCent());
         }
 
         private void Clipboard_MouseDown(object sender, MouseButtonEventArgs e)

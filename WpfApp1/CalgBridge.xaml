@@ -8,24 +8,25 @@
              d:DesignHeight="540" d:DesignWidth="960">
     <Grid  Background="White" >
         <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
+            <RowDefinition Height="29*"/>
             <RowDefinition Height="221*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="401*"/>
+            <ColumnDefinition Width="79*"/>
         </Grid.ColumnDefinitions>
         <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
             <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
-            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
-            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="4:26pm" Height="43" Width="165" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="0,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Calgary Bridge Foundation" Height="43" Width="369" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="40,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="30,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="343" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" In School Settlement Program (ISSP) - The In School Settlement Program (ISSP) provides comprehensive, client centered settlement services to help newcomer students and their families in their new lives in Calgary. Our program provides information and connects families to the resources available in their school, community and through government services. The In School Settlement Practitioners (ISSPs) conduct in depth assessments of our clients' needs and develop personalized settlement plans to guide their journey.
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="368" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" In School Settlement Program (ISSP) - The In School Settlement Program (ISSP) provides comprehensive, client centered settlement services to help newcomer students and their families in their new lives in Calgary. Our program provides information and connects families to the resources available in their school, community and through government services. The In School Settlement Practitioners (ISSPs) conduct in depth assessments of our clients' needs and develop personalized settlement plans to guide their journey.
 
 
                  
@@ -45,7 +46,7 @@ Programs are delivered during the school year to selected schools, housing compl
                  
                  
                  
-                 " VerticalAlignment="Top" Width="461" FontSize="14" IsReadOnly="True">
+                 " VerticalAlignment="Top" Width="491" FontSize="14" IsReadOnly="True">
             <TextBox.BorderBrush>
                 <ImageBrush/>
             </TextBox.BorderBrush>
@@ -54,8 +55,8 @@ Programs are delivered during the school year to selected schools, housing compl
             </TextBox.Background>
         </TextBox>
         <Label Grid.ColumnSpan="2" Content="The Calgary Bridge Foundation for Youth" HorizontalAlignment="Left" Margin="46,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="49" Width="509" FontSize="24" FontWeight="Bold" />
-        <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="226" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/CBFY.jpg" Grid.Row="1"/>
-        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address: 620 – 5920 Macleod Trail SW &#xA;&#xA;Phone: 403-230-7745 &#xA;&#xA;Hours: Monday to Friday: 8:30 AM - 4:30PM &#xA;" VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16">
+        <Image Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="226" Margin="586,0,-21,0" VerticalAlignment="Top" Width="395" Source="Assets/CBFY.jpg" Grid.Row="1"/>
+        <TextBox Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="186" Margin="586,246,0,0" Grid.Row="1" TextWrapping="Wrap" IsReadOnly="True" Text="Address: 620 – 5920 Macleod Trail SW &#xA;&#xA;Phone: 403-230-7745 &#xA;&#xA;Hours: Monday to Friday: 8:30 AM - 4:30PM &#xA;" VerticalAlignment="Top" Width="364" TextChanged="TextBox_TextChanged" FontWeight="Bold" FontSize="16">
             <TextBox.BorderBrush>
                 <ImageBrush/>
             </TextBox.BorderBrush>
@@ -63,6 +64,6 @@ Programs are delivered during the school year to selected schools, housing compl
                 <ImageBrush/>
             </TextBox.Background>
         </TextBox>
-        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="76,387,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
+        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="128,379,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
     </Grid>
 </UserControl>

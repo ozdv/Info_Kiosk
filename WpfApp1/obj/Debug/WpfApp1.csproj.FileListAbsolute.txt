@@ -229,9 +229,7 @@ U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\CalgBridge.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\New_Cent.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImmigrantEdc.g.cs
-U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\NewComers.g.cs
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImmigrantEdc.baml
-U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\NewComers.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ResGroup.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\CalgBridge.baml
 U:\Desktop\Info_Kiosk\WpfApp1\obj\Debug\ImgServ.baml
