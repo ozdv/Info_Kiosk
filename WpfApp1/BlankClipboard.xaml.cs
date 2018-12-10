@@ -90,5 +90,10 @@ namespace WpfApp1
         {
             userEmail.Text = "Enter your email here";
         }
+
+        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Navigate.Move(new Welcome());
+        }
     }
 }

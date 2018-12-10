@@ -311,5 +311,8 @@
     <Resource Include="Assets\Nikkei.PNG" />
     <Resource Include="Assets\review.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\plus.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

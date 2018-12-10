@@ -69,6 +69,6 @@ fnding a place to live
                 <ImageBrush/>
             </TextBox.Background>
         </TextBox>
-        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="117,404,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
+        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="  +   Add this information to Clipboard" HorizontalAlignment="Left" Margin="117,404,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
     </Grid>
 </UserControl>

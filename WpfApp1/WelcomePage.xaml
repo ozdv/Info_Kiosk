@@ -45,5 +45,16 @@
         <Label HorizontalAlignment="Center" Height="43" Margin="575,51,123,446" Content="Maligayang pagdating" VerticalAlignment="Center" Width="262" Background="#FFF6F6F6" BorderBrush="#FFF6F6F6" FontFamily="Microsoft Sans Serif" FontSize="24"/>
         <Label HorizontalAlignment="Center" Height="44" Margin="662,179,216,317" Content="ようこそ" VerticalAlignment="Center" Width="82" Background="#FFF6F6F6" BorderBrush="#FFF6F6F6" FontFamily="Microsoft Sans Serif" FontSize="24"/>
         <Label HorizontalAlignment="Center" Height="42" Margin="771,119,99,379" Content="환영" VerticalAlignment="Center" Width="90" Background="#FFF6F6F6" BorderBrush="#FFF6F6F6" FontFamily="Microsoft Sans Serif" FontSize="24"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="960" Height="540" Click="Button_Click" Opacity="0">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+        </Button>
     </Grid>
 </UserControl>

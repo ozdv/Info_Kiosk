@@ -25,7 +25,7 @@
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
         </StatusBar>
-         <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="343" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="We know it is very overwhelming moving to a new city. As such, the City of Calgary has compiled lots of the governments resources within the walls of a single building. The Harry Hays building is the home to Citizenship and immigration, the Canada Revenue Agency, Service Canada, and Canada programs and services.&#xD;&#xA;&#xD;&#xA;Keep in mind however, man of these resources are not solely based out of Harry Hays, and have Multiple offices throughout the city that may be easier to access. The phone number provided connects you to the nearest building for your service needs. In Addition the website link provided  (Services Canada) shoes all services offered, and the location available to visit, with contact information as well. " VerticalAlignment="Top" Width="461" FontSize="14" IsReadOnly="True">
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="244" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="We know it is very overwhelming moving to a new city. As such, the City of Calgary has compiled lots of the governments resources within the walls of a single building. The Harry Hays building is the home to Citizenship and immigration, the Canada Revenue Agency, Service Canada, and Canada programs and services.&#xD;&#xA;&#xD;&#xA;Keep in mind however, man of these resources are not solely based out of Harry Hays, and have Multiple offices throughout the city that may be easier to access. The phone number provided connects you to the nearest building for your service needs. In Addition the website link provided  (Services Canada) shoes all services offered, and the location available to visit, with contact information as well. " VerticalAlignment="Top" Width="461" FontSize="14" IsReadOnly="True">
             <TextBox.BorderBrush>
                 <ImageBrush/>
             </TextBox.BorderBrush>
@@ -43,6 +43,7 @@
                 <ImageBrush/>
             </TextBox.Background>
         </TextBox>
-        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="116,344,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
+        <!--<Image Source ="Assets/plus.png" OpacityMask="White" Margin="116,344,814,70" MouseDown="Back_MouseDown" Grid.ColumnSpan="2" Grid.Row="1"/>-->
+        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="  +  Add this information to Clipboard" HorizontalAlignment="Left" Margin="116,344,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="AddToClipboard_MouseDown"/>
     </Grid>
 </UserControl>

@@ -27,12 +27,17 @@ namespace WpfApp1
 
         private void Hat_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new Languages());
+            
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Navigate.Move(new Languages());
         }
     }
 

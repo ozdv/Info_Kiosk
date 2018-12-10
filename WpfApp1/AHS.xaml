@@ -43,6 +43,6 @@
             </TextBox.Background>
         </TextBox>
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="131" Margin="51,233,0,0" Grid.Row="1" VerticalAlignment="Top" Width="357" Source="Assets/AHS LOGO.png"/>
-        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="      Add this information to Clipboard" HorizontalAlignment="Left" Margin="110,364,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="Clipboard_MouseDown"/>
+        <Label Background ="LightGray" Grid.ColumnSpan="2" Content="  +  Add this information to Clipboard" HorizontalAlignment="Left" Margin="110,364,0,0" Grid.Row="1" VerticalAlignment="Top" Width="268" FontWeight="Medium" FontSize="14" Height="28" FontStretch="Expanded" MouseDown="Clipboard_MouseDown"/>
     </Grid>
 </UserControl>

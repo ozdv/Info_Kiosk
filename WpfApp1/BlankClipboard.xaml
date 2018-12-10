@@ -33,7 +33,7 @@
             <Label Content="Your saved information will appear here" HorizontalAlignment="Left" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="41,16,0,0"  Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="45" Width="599" FontStyle="Italic"/>
         </Grid>
         <Label Content=" Saved to My Clipboard" Foreground ="Gray" FontStretch="UltraExpanded" HorizontalAlignment="Center" FontFamily="Microsoft Sans Serif" FontSize="22" Margin="40,97,650,0" VerticalAlignment="Top" RenderTransformOrigin="-14.399,-6.05" Height="39" Width="270"/>
-        <Image x:Name="Email" Source="Assets/email.png" Margin="808,271,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929" Opacity="0.5"  >
+        <Image x:Name="Email" Source="Assets/email.png" Margin="237,440,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Email_MouseDown" RenderTransformOrigin="0.024,-0.929" Opacity="0.5"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -44,7 +44,7 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <Image x:Name="Print" Source="Assets/print.png" Margin="808,352,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Print_MouseDown" RenderTransformOrigin="0.738,-3.286" Opacity="0.5"  >
+        <Image x:Name="Print" Source="Assets/print.png" Margin="388,440,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="42" MouseDown="Print_MouseDown" RenderTransformOrigin="0.738,-3.286" Opacity="0.5"  >
             <Image.Resources>
                 <Style TargetType="Image">
                     <Style.Triggers>
@@ -55,8 +55,9 @@
                 </Style>
             </Image.Resources>
         </Image>
-        <TextBlock HorizontalAlignment="Left" Margin="865,352,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75" Opacity="0.5"/>
-        <TextBlock HorizontalAlignment="Left" Margin="865,271,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="63" RenderTransformOrigin="0.588,0.742" Opacity="0.5"/>
-        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="808,219,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt" Foreground="#FF817B7B"/>
+        <TextBlock HorizontalAlignment="Left" Margin="435,440,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75" Opacity="0.5"/>
+        <TextBlock HorizontalAlignment="Left" Margin="284,440,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="64" RenderTransformOrigin="0.588,0.742" Opacity="0.5"/>
+        <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="55,452,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt" Foreground="#FF817B7B"/>
+        <Label Background="#C8102E" Foreground="White" Content="End Session" HorizontalAlignment="Left" Margin="782,417,0,0" VerticalAlignment="Top" Width="118" Height="44" MouseDown="Label_MouseDown" FontSize="20" ScrollViewer.CanContentScroll="True"/>
     </Grid>
 </UserControl>

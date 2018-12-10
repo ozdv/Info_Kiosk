@@ -69,18 +69,29 @@ namespace WpfApp1
 
         private void enterEmail(object sender, MouseEventArgs e)
         {
-            if (userEmail.Text.Trim() != "" || userEmail.Text != null)
+//            if (userEmail.Text.Trim() != "" || userEmail.Text != null)
+             if (userEmail.Text.Trim() == "Enter your email here")
 
-            {
+              {
 
-                userEmail.Text = "";
+                    userEmail.Text = "";
 
-            }
+              }
         }
 
         private void restorePrompt(object sender, MouseEventArgs e)
         {
-            userEmail.Text = "Enter your email here";
+           // userEmail.Text = "Enter your email here";
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Label_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Navigate.Move(new Welcome());
         }
     }
 }
