@@ -93,6 +93,16 @@ namespace WpfApp1
 
         private void Label_MouseDown(object sender, MouseButtonEventArgs e)
         {
+
+            if (MessageBox.Show("Do you wish to quit?", "End", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+                //do no stuff
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show("See You Next Time! :)");
+            }
+
             Navigate.Move(new Welcome());
         }
     }

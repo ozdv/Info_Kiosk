@@ -22,9 +22,10 @@
             <Label Content="4:26pm" Height="43" Width="165" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="0,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Calgary Bridge Foundation" Height="43" Width="369" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="30,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="10,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Label Name ="num" Content="2" Height="28" Width="22" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="14" HorizontalAlignment="Center" FontWeight="Bold"/>
         </StatusBar>
         <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="368" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text=" In School Settlement Program (ISSP) - The In School Settlement Program (ISSP) provides comprehensive, client centered settlement services to help newcomer students and their families in their new lives in Calgary. Our program provides information and connects families to the resources available in their school, community and through government services. The In School Settlement Practitioners (ISSPs) conduct in depth assessments of our clients' needs and develop personalized settlement plans to guide their journey.
 

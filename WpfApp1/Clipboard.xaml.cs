@@ -21,9 +21,11 @@ namespace WpfApp1
     /// </summary>
     public partial class Clipboard : UserControl
     {
+        public int number = 0;
         public Clipboard()
         {
             InitializeComponent();
+            DataContext = this;
         }
 
         private void Back_MouseDown(object sender, MouseButtonEventArgs e)
@@ -92,7 +94,16 @@ namespace WpfApp1
 
         private void Label_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new Welcome());
+            if (MessageBox.Show("Do you wish to quit?", "End", MessageBoxButton.YesNo, MessageBoxImage.Warning) == MessageBoxResult.No)
+            {
+               //do no stuff
+            }
+            else
+            {
+               MessageBoxResult result = MessageBox.Show("See You Next Time! :)");
+            }
+
+             Navigate.Move(new Welcome());
         }
     }
 }

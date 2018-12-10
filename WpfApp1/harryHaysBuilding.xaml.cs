@@ -38,7 +38,8 @@ namespace WpfApp1
 
         private void Clipboard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Navigate.Move(new Clipboard());
+            UserControl myBoard = new Clipboard(); 
+            Navigate.Move(myBoard);
         }
 
 
@@ -56,6 +57,7 @@ namespace WpfApp1
             else
             {
                 MessageBoxResult result = MessageBox.Show("Added to your Clipboard!");
+                Navigate.Move(new HarryHays1());
             }
         }
     }

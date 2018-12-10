@@ -21,10 +21,11 @@
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
             <Label Content="4:26pm" Height="43" Width="110" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
-            <Label Content="Centre for Newcomers" Height="43" Width="440" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="10,0,0,0" OpacityMask="White"/>
+            <Label Content="Centre for Newcomers" Height="43" Width="425" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="0,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Label Name ="num" Content="2" Height="28" Width="22" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="14" HorizontalAlignment="Center" FontWeight="Bold"/>
         </StatusBar>
         <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="343" Margin="46,64,0,0" Grid.Row="1" TextWrapping="Wrap" Text="English Language Program - Improve your ability to speak, understand, read and write in English. The Centre offers English classes for adults. To take part in ESL (English as a second language) classes, you must first visit the Immigrant Language and Vocational Assessment Referral Centre - ILVARC  at (403) 262-2656 and set up a time to meet with a specialist who will refer you to the right class.
 

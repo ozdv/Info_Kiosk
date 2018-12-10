@@ -56,6 +56,7 @@ namespace WpfApp1
             else
             {
                 MessageBoxResult result = MessageBox.Show("Added to your Clipboard!");
+                Navigate.Move(new ImgServ2());
             }
         }
     }

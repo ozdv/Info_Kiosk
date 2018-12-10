@@ -13,9 +13,10 @@
             <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
             <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="70,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="Clipboard" Height="43" Width="150" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="170,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="155,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
-            <Image Source ="Assets/clipboard2.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" />
+            <Image Source ="Assets/clipboard2.png" Height="34" Width="32" OpacityMask="White" Margin="0,0,0,0" />
+            <Label Content="0" Height="28" Width="22" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="14" HorizontalAlignment="Center" FontWeight="Bold"/>
         </StatusBar>
         <Grid HorizontalAlignment="Left" Margin="0,136,0,0" VerticalAlignment="Top" Width="788" Height="276">
             <Grid.ColumnDefinitions>
@@ -58,6 +59,6 @@
         <TextBlock HorizontalAlignment="Left" Margin="435,440,0,0" TextWrapping="Wrap" Text="Print Selection" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="75" Opacity="0.5"/>
         <TextBlock HorizontalAlignment="Left" Margin="284,440,0,0" TextWrapping="Wrap" Text="Send Email" FontFamily="Microsoft Sans Serif" FontSize="14" VerticalAlignment="Top" Height="42" Width="64" RenderTransformOrigin="0.588,0.742" Opacity="0.5"/>
         <TextBox HorizontalAlignment="Left" Name="userEmail" Height="23" Margin="55,452,0,0" TextWrapping="Wrap" Text="Enter your email here" VerticalAlignment="Top" Width="132" MouseEnter="enterEmail" MouseLeave="restorePrompt" Foreground="#FF817B7B"/>
-        <Label Background="#C8102E" Foreground="White" Content="End Session" HorizontalAlignment="Left" Margin="782,417,0,0" VerticalAlignment="Top" Width="118" Height="44" MouseDown="Label_MouseDown" FontSize="20" ScrollViewer.CanContentScroll="True"/>
+        <Label x:Name="End" Background="#C8102E" Foreground="White" Content="End Session" HorizontalAlignment="Left" Margin="782,417,0,0" VerticalAlignment="Top" Width="118" Height="44" MouseDown="Label_MouseDown" FontSize="20" ScrollViewer.CanContentScroll="True"/>
     </Grid>
 </UserControl>

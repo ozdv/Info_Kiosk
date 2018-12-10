@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="WpfApp1.ResGroup2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid  Background="White"  >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="221*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <!--<StatusBar HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="960" Background="#FFC31919" Grid.ColumnSpan="2"/>-->
+        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+            <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
+            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Resource Groups" Height="43" Width="350" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="20,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Label Name ="num" Content="3" Height="28" Width="22" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="14" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </StatusBar>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="60,3,0,0" VerticalAlignment="Top" Width="200" Height="136" Grid.Row="1">
+            <Button.Foreground>
+                <ImageBrush/>
+            </Button.Foreground>
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Height="126" Width="190" Source="Assets/cenNew.jpg" Opacity="0.7" MouseDown="Image_MouseDown"/>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="376,9,0,0" VerticalAlignment="Top" Width="200" Height="136" Grid.Row="1">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image HorizontalAlignment="Left" Height="154" VerticalAlignment="Top" Width="200" Source="Assets/ImgServ.jpg" MouseDown="Image_MouseDown_2"/>
+        </Button>
+        <Button Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="689,13,0,0" VerticalAlignment="Top" Width="200" Height="136" Grid.Row="1">
+            <Button.BorderBrush>
+                <ImageBrush/>
+            </Button.BorderBrush>
+            <Button.Background>
+                <ImageBrush/>
+            </Button.Background>
+            <Image Height="136" Width="200" Source="Assets/calgBrid.jpg" MouseDown="Image_MouseDown_1"/>
+        </Button>
+        <!--<Label Content="15℃ 4:26pm" Height="55" Width="230" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="32" HorizontalAlignment="Center" Margin="720,5,10,38" Grid.ColumnSpan="2"/>-->
+        <Label Grid.ColumnSpan="2" Content="Centre for Newcomers" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="186" FontWeight="Bold" FontSize="16"/>
+        <Label Grid.ColumnSpan="2" Content="Immigrant Services Calgary" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="360,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="234" FontWeight="Bold" FontSize="16"/>
+        <Label Grid.ColumnSpan="2" Content="The Calgary Bridge Foundation for Youth" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="674,144,0,0" Grid.Row="1" VerticalAlignment="Top" Width="243" FontWeight="Bold" FontSize="16"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="151" Margin="60,206,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Settlement services, English Training, Welcoming community initiatives, Life Skills Program
+           " VerticalAlignment="Top" Width="200" FontSize="14"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="151" Margin="376,206,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Interpretation and translation, Language assessment, Family services, Senior's programs
+Citizenship preparation." VerticalAlignment="Top" Width="200" FontSize="14"/>
+        <TextBlock Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="151" Margin="689,206,0,0" Grid.Row="1" TextWrapping="Wrap" Text="In school settlement, Mentorship Program, Academic tutoring, Summer Program" VerticalAlignment="Top" Width="200" FontSize="14"/>
+    </Grid>
+</UserControl>

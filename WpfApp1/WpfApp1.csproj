@@ -72,11 +72,32 @@
     <Compile Include="CalgBridge.xaml.cs">
       <DependentUpon>CalgBridge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GovDoc1.xaml.cs">
+      <DependentUpon>GovDoc1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GovDoc2.xaml.cs">
+      <DependentUpon>GovDoc2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HarryHays1.xaml.cs">
+      <DependentUpon>HarryHays1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home2.xaml.cs">
+      <DependentUpon>Home2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Home3.xaml.cs">
+      <DependentUpon>Home3.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImgServ.xaml.cs">
       <DependentUpon>ImgServ.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ImgServ2.xaml.cs">
+      <DependentUpon>ImgServ2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImmigrantEdc.xaml.cs">
       <DependentUpon>ImmigrantEdc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ISS2.xaml.cs">
+      <DependentUpon>ISS2.xaml</DependentUpon>
     </Compile>
     <Compile Include="New_Cent.xaml.cs">
       <DependentUpon>New_Cent.xaml</DependentUpon>
@@ -98,6 +119,9 @@
       <DependentUpon>Print.xaml</DependentUpon>
     </Compile>
     <Compile Include="ResGroup.cs" />
+    <Compile Include="ResGroup2.xaml.cs">
+      <DependentUpon>ResGroup2.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Transit.xaml.cs" />
     <Compile Include="Trash.xaml.cs">
       <DependentUpon>Trash.xaml</DependentUpon>
@@ -121,9 +145,37 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="GovDoc1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GovDoc2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HarryHays1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Home3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImgServ2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ImmigrantEdc.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ISS2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ResGroup.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -178,6 +230,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Print.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResGroup2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

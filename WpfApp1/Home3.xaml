@@ -1,0 +1,142 @@
+﻿<UserControl x:Class="WpfApp1.Home3"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1"
+             mc:Ignorable="d" 
+             d:DesignHeight="540" d:DesignWidth="960">
+    <Grid Background="#f6f6f6">
+        <StatusBar HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="960" Background ="#C8102E " Grid.ColumnSpan="3">
+            <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
+            <Label Content="4:26pm" Height="43" Width="170" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="55,0,0,0" MouseDown="Back_MouseDown"/>
+            <Label Content="Resources" Height="43" Width="160" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="35,0,0,0" OpacityMask="White"/>
+            <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
+            <Image Source ="Assets/clipboard.png" Height="36" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="BlankClipboard_MouseDown"/>
+            <Label Content="Clipboard (3)" Height="43" Width="149" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" MouseDown="BlankClipboard_MouseDown" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="20" HorizontalAlignment="Center" FontWeight="Bold"/>
+        </StatusBar>
+        <Grid HorizontalAlignment="Left" Margin="0,58,0,0" VerticalAlignment="Top" Width="950" Height="449">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="149*"/>
+                <ColumnDefinition Width="167*"/>
+                <ColumnDefinition Width="159*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="158*"/>
+                <RowDefinition Height="158*"/>
+                <RowDefinition Height="159*"/>
+            </Grid.RowDefinitions>
+            <Label HorizontalAlignment="Left" Height="42" Margin="91,101,0,0" Content="Map" VerticalAlignment="Top" Width="98" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="104,104,0,0" Content="Transit" VerticalAlignment="Top" Width="129" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="34,108,0,0" Content="Accommodations" VerticalAlignment="Top" Width="254" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.RowSpan="2"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="25,101,0,0" Content="Upcoming Events" VerticalAlignment="Top" Width="286" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="16,101,0,0" Content="Health Resources" VerticalAlignment="Top" Width="287" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="13,98,0,0" Content="Attractions" VerticalAlignment="Top" Width="254" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="0,101,-22,0" Content="Government Documents" VerticalAlignment="Top" Width="340" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="2" Grid.Row="2"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="34,101,0,0" Content="Banking Information" VerticalAlignment="Top" Width="277" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2" Grid.Column="1"/>
+            <Label HorizontalAlignment="Left" Height="42" Margin="13,101,0,0" Content="Resource Groups" VerticalAlignment="Top" Width="285" FontFamily="Microsoft Sans Serif" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Row="2"/>
+            <Image x:Name="Map" Source="Assets/maps.png" Margin="0,26,122,53" HorizontalAlignment="Right" VerticalAlignment="Center" Height="70" Width="70" MouseDown="Map_MouseDown"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Transit" Source="Assets/train.png" Margin="0,26,131,53" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="70" Width="70" MouseDown="Transit_MouseDown" Grid.Column="1"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Accommodations" Source="Assets/housing.png" Margin="0,30,125,49" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="70" Width="70" MouseDown="Accommodations_MouseDown" Grid.Column="2"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Attractions" Source="Assets/camera.png" Margin="0,26,122,54" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="70" Width="70" MouseDown="Attractions_MouseDown" Grid.Row="1"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Events" Source="Assets/calendar.png" Margin="0,26,131,54" HorizontalAlignment="Right" VerticalAlignment="Center" Height="70" Width="70" MouseDown="Events_MouseDown" Grid.Row="1" Grid.Column="1"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Health_Resources" Source="Assets/health.png" Margin="0,15,129,65" HorizontalAlignment="Right" VerticalAlignment="Center" Height="70" Width="70" MouseDown="Health_Resources_MouseDown" Grid.Column="2" Grid.Row="1"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="ResourceGroups" Source="Assets/resourceGroup.png" Margin="0,27,122,53" HorizontalAlignment="Right" VerticalAlignment="Center"  Height="70" Width="70" MouseDown="ResourceGroups_MouseDown" Grid.Row="2"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="GovDoc" Source="Assets/govdoc.png" Margin="0,29,126,51" HorizontalAlignment="Right" VerticalAlignment="Center" Height="70" Width="70" MouseDown="GovDoc_MouseDown" Grid.Column="2" Grid.Row="2">
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+            <Image x:Name="Banking" Source="Assets/banking.png" Margin="0,26,131,54" HorizontalAlignment="Right" VerticalAlignment="Center" Height="70" Width="70" MouseDown="Banking_MouseDown" Grid.Column="1" Grid.Row="2"  >
+                <Image.Resources>
+                    <Style TargetType="Image">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding ElementName=DisplayImage, Path=IsPressed}" Value="True">
+                                <Setter  Property="Visibility" Value="Visible"></Setter>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Image.Resources>
+            </Image>
+        </Grid>
+    </Grid>
+</UserControl>

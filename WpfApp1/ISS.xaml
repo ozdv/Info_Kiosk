@@ -19,11 +19,12 @@
             <Image Source ="Assets/back_icon.png" Height="38" Width="38" OpacityMask="White" Margin="10,0,0,0" MouseDown="Back_MouseDown"/>
             <Image Source ="Assets/helpSign.png" Height="38" Width="38" Margin="5,0,0,0" OpacityMask="White"/>
             <Label Content="4:26pm" Height="43" Width="110" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
-            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="5,0,0,0" MouseDown="Back_MouseDown"/>
+            <Image Source ="Assets/citylogo.png" Height="40" Width="100" Margin="0,0,0,0" MouseDown="Back_MouseDown"/>
             <Label Content="International Students Services" Height="43" Width="440" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" FontWeight="Bold" Foreground="#f6f6f6" AutomationProperties.IsRowHeader="True" FontSize="26" VerticalAlignment="Center" HorizontalAlignment="Center" />
-            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="10,0,0,0" OpacityMask="White"/>
+            <Image Source ="Assets/sun.png" Height="38" Width="38" Margin="0,0,0,0" OpacityMask="White"/>
             <Label Content="15℃" Height="43" Width="65" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="24" HorizontalAlignment="Center"/>
-            <Image Source ="Assets/clipboard.png" Height="34" Width="36" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Image Source ="Assets/clipboard.png" Height="34" Width="30" OpacityMask="White" Margin="0,0,0,0" MouseDown="Clipboard_MouseDown"/>
+            <Label Name ="num" Content="1" Height="28" Width="22" Margin="0,0,0,0" FontFamily="MS Reference Sans Serif" Foreground="#f6f6f6" VerticalAlignment="Center" AutomationProperties.IsRowHeader="True" FontSize="14" HorizontalAlignment="Center" FontWeight="Bold"/>
         </StatusBar>
         <Image Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="266" Margin="476,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="427" Source="Assets/University-Of-Calgary-Logo.png"/>
         <Label Grid.ColumnSpan="2" Content="University of Calgary, International Student Services" HorizontalAlignment="Left" Margin="37,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="60" Width="411" FontSize="16" FontWeight="Bold">
